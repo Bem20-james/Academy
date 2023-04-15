@@ -1,3 +1,4 @@
+/* css code for header and footer */
 .top-head{
     background-color: rgb(201, 196, 196);
 }
@@ -55,3 +56,44 @@ a:hover {
 .check{
     list-style: none;
 }
+/* css code for the index */
+.slider img{
+    width: auto;
+    height: 220px;
+  
+}
+.text-center{
+    text-align: center;
+    font-size: medium;
+    font-style: italic;
+    font-weight: bold;
+}
+.row{
+    margin-top: 20;
+    cursor: pointer;
+}
+
+.carousel-content {
+    position:absolute;
+    bottom: 50%;
+    left: 25%;
+    z-index: 20;
+    color: rgb(215, 189, 189);
+    text-shadow: rgb(60, 142, 60);
+  }
+  .courses{
+      height: 400px;
+      width: 100%;
+  }
+  .from-the-best{
+      background-color: whitesmoke;
+      width: auto;
+      height: 15%;
+  }
+  .we-are{
+      font-weight:400;
+      font-style: normal;
+      text-decoration: solid;
+      background-color: rgb(207, 200, 200);
+  }
+/* end of index css */

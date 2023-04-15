@@ -19,4 +19,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::namespace('web')->middleware('web')->group(function (){
     Route::get('/index', 'HomeController@index')->name('index');
+    Route::get('/about_us', 'HomeController@about')->name('about');
 });

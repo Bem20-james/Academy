@@ -1,0 +1,57 @@
+.top-head{
+    background-color: rgb(201, 196, 196);
+}
+.head{
+    margin: auto;
+}
+
+.items{
+    align-items: start;
+}
+.footer {
+    background: #151F4F;
+    color: white;
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+    transition: color .2s;
+}
+
+li a:hover {
+    text-decoration: none;
+    color: #06bf56;
+}
+
+.about-company i {
+    font-size: 25px;
+}
+
+i a {
+    color: white;
+    transition: color .2s;
+}
+
+a:hover {
+    color: #06bf56;
+}
+
+.location i {
+    font-size: 18px;
+}
+
+.copyright p {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.lines{
+    line-height: 8px;
+}
+
+.check{
+    list-style: none;
+}

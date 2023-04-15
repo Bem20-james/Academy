@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="styles/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/plugin/fa-6-web/css/all.css">
+    <link rel="stylesheet" href="styles/products_styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixted-top">
+</nav>
+
+<section class="container sproduct my-5 pt-5">
+    <div class="row mt-5">
+        <div class="col-lg-5 col-md-12 col-12">
+            <img class="img-fluid w-100 pb-1" src="assets/plugin/ecommence_pix/1(6).jpg" id="MainImg" alt="">
+
+            <div class="small-img-group ">
+                <div class="small-img-col">
+                    <img src="assets/plugin/ecommence_pix/1(16).jpg " width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="assets/plugin/ecommence_pix/1(10).jpg " width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="assets/plugin/ecommence_pix/1(17).jpg " width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="assets/plugin/ecommence_pix/Chair.jfif " width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-12 col-12">
+            <h6>Home / T-Shirt</h6>
+            <h3 class="py-4">Men's Fashion T-Shirt</h3>
+            <h2>$139.00</h2>
+            <select class="my-3">
+                <option>Select Size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>Small</option>
+                <option>Large</option>
+            </select>
+            <input type="number" value="1">
+            <button class="buy-btn">Add To Cart</button>
+            <h4 class="mt-5 mb-5">Product Details</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sequi, eaque unde velit assumenda quasi ipsum cumque sunt 
+                necessitatibus doloremque nisi error id ab sed aspernatur, 
+                asperiores obcaecati qui veritatis commodi?</span>
+        </div>
+    </div>
+</section>
+
+<!-- RELATED PRODUCTS -->
+<!-- MEN'S CLOTHING  -->
+<section>
+    <div class="">
+        <div class="common-heading">
+            <div class="common-heading-left">
+                <h1>Related Products</h1><i class="fa-solid fa-timer text-center"></i>
+            </div>
+        </div>
+        <div class="common-row col-deals ">
+            <div class="common-col col-lg-3 col-md-12 col-12">
+                <img src="assets/ecommence_pix/Trouser.jfif" alt="" class="product-img">
+                <h3 class="product-title">Trousers for men</h3>
+                <h4>Upto 70% off</h4>
+                <h6 class="price">Nickers & more</h6>
+                <i class="fa-solid fa-bag-shopping" id="add-cart"></i> 
+            </div>
+    
+            <div class="common-col col-lg-3 col-md-12 col-12">
+                <img src="assets/ecommence_pix/Vest for men.jfif" alt="" class="product-img">
+                <h3 class="product-title">Vest for Men</h3>
+                <h4>Upto 46% off</h4>
+                <h6 class="price">Starts from <i class="fa-solid fa-naira-sign"></i>299</h6>
+                <i class="fa-solid fa-bag-shopping" id="add-cart"></i> 
+            </div>
+            <div class="common-col col-lg-3 col-md-12 col-12">
+                <img src="assets/ecommence_pix/T-shirt 1.jfif" alt="" class="product-img">
+                <h3 class="product-title">Best of shirts</h3>
+                <h4>Top Brands</h4>
+                <h6 class="price">Starts from <i class="fa-solid fa-naira-sign"></i>500</h6>
+                <i class="fa-solid fa-bag-shopping" id="add-cart"></i> 
+            </div>
+            <div class="common-col col-lg-3 col-md-12 col-12">
+                <img src="assets/ecommence_pix/fashion_220x220.png" alt="" class="product-img">
+                <h3 class="product-title">Personal/sport wares</h3>
+                <h4>Min 25% off + 30% off</h4>
+                <h6 class="price">Canvas, Sandals & more</h6>
+                <i class="fa-solid fa-bag-shopping" id="add-cart"></i> 
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    var MainImg = document.getElementById('MainImg');
+    var smallimg = document.getElementsByClassName('small-img');
+
+    smallimg[0].onclick = function() {
+        MainImg.src = smallimg[0].src;  
+    }
+    smallimg[1].onclick = function(){
+        MainImg.src = smallimg[2].src;  
+    }
+    smallimg[2].onclick = function(){
+        MainImg.src = smallimg[3].src;  
+    }
+    smallimg[3].onclick = function(){
+        MainImg.src = smallimg[4].src;  
+    }
+</script>
+
+
+</body>
+<script src="assets/plugin/fa-6-web/js/all.js"></script>
+<script src="assets/plugin/jquery2/main.js"></script>
+<script src="assets/plugin/jquery2/jquery-3.2.1.min.js"></script>
+<script src="styles/js/bootstrap.js"></script>
+
+<!-- scripts to work -->
+
+
+
+</html>

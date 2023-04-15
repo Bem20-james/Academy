@@ -1,0 +1,22 @@
+ul{
+    list-style-type: none;
+    padding: 0%;
+}
+
+
+
+.col-gap{
+    column-gap: 5.5rem;
+}
+
+.text-small{
+    font-size: .9rem;
+}
+
+.header{
+    height: 5em
+}
+
+.header-inner{
+    height: 100%;
+}

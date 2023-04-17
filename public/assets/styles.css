@@ -57,10 +57,16 @@ a:hover {
     list-style: none;
 }
 /* css code for the index */
+.images{
+    height: 75vh;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+}
 .slider img{
     width: auto;
-    height: 220px;
-  
+    height: 70vh;
 }
 .text-center{
     text-align: center;
@@ -97,3 +103,174 @@ a:hover {
       background-color: rgb(207, 200, 200);
   }
 /* end of index css */
+
+ /* ======== Css for login and registration ========= */
+
+.text{
+   color: #151F4F;
+}
+.bg-color{
+    background-color: #06bf56;
+    color: white;
+}
+.bg-wrap{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-wrap-2{
+    position: relative;
+    height: 120vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+    
+ .wrapper{
+     width: 100%;
+     background-image: -moz-element();
+     border-radius: 5px;
+     color: #fff;
+     box-shadow: 0px 4px 10px 1px rgb(red, green, blue);
+ }
+ .bg-img{
+     background-size: cover;
+     background-image: asset ('assets/images/main-feature') ;
+ }
+
+ .wrapper .title{
+     height: 90px;
+     background: #16a085;
+     border-radius: 5px 5px 0 0;
+     color: #fff;
+     font-size: 30px;
+     font-weight: 600;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .wrapper form .row{
+     height: 45px;
+     margin: bottom 15px;
+     position: relative;
+ }
+
+ .wrapper form .row input{
+     height: 100%;
+     width: 100%;
+     outline: none;
+     padding-left: 60px;
+     border-radius: 5px;
+     border: 1px solid lightgreen;
+     font-size: 16px;
+     transition: all 0.4s ease;
+ }
+ .wrapper form .row{
+     position: absolute;
+     width: 47px;
+     height: 100%;
+     color: #fff;
+     font-size: 18px;
+     background: #16a085;
+     border: 1px solid #16a085;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .wrapper form .pass{
+    margin: -8px 0 20px 0;
+ }
+ .wrapper form .pass a{
+     color: #16a085;
+     font-size: 17px;
+     text-decoration: none;
+ }
+ .wrapper form .pass a:hover{
+     text-decoration: underline;
+     background: #16a085;
+     border: 1px solid #16a085;
+     cursor: pointer;
+ }
+ form .button input:hover{
+     background: #12876f;
+ }
+ .wrapper form .signup-link{
+     text-align: center;
+     margin-top: 20px;
+     font-size: 17px;
+ }
+ .wrapper form .signup-link a{
+     color: #16a085;
+     text-decoration: none;
+ }
+ .form .signup-link a:hover{
+     text-decoration: underline;
+ }
+
+ /* adding padding to container */
+ .container{
+    justify-content: center;
+    width: 50%;
+    padding: 50px;
+
+}
+.heading{
+    text-align: center;
+    color: blue;
+}
+ .contains{
+    padding: 25px;
+    justify-content: center;
+    background-color: #ddd;
+    justify-content: right; 
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: absolute;
+    opacity: 0.7;
+    top: 250px;
+ } 
+
+ /* input fields width */
+ .combined-2 {
+     width: 100%;
+     padding: 15px;
+     display: inline-block;
+     border: none;
+     text-emphasis: none;
+     color: rgb(8, 8, 67)
+ }
+
+ .registerbtn:hover{
+     opacity: 1;
+ }
+  /* text color to link */
+  a{
+      color: dodgerblue;
+  }
+
+  /* sigin section */
+   .signin{
+      background-color: #f1f1f1;
+      justify-content: center;
+      color: rgb(8, 8, 67)
+  } 
+  
+  .exist-account{
+      text-align: center;
+      justify-content: center;
+      color: rgb(8, 8, 67)
+    
+  }
+  .privacy{
+      text-align: center;
+      /* font: 1em sans-serif; */
+      justify-content: center;
+      color: rgb(8, 8, 67)
+      
+  }
+  /* =====End of Css for Registration========== */
+  

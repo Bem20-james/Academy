@@ -13,11 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
-Route::namespace('web')->middleware('web')->group(function (){
-    Route::get('/index', 'HomeController@index')->name('index');
+Route::group(['namespace' => 'web'], function (){
+    Route::get('/', 'HomeController@index')->name('index');
     Route::get('/about_us', 'HomeController@about')->name('about');
+
+    //Auth routes
+    Route::get('/login', 'HomeController@login')->name('login');
+    Route::get('/register', 'HomeController@register')->name('register');
 });

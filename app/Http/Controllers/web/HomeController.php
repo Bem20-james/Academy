@@ -14,4 +14,13 @@ class HomeController extends Controller
     public function about(){
         return view('about_us');
     }
+
+    public function login(){
+        return view('auth.login');
+    }
+
+    public function register(){
+        return view('auth.register');
+    }
+    
 }

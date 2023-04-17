@@ -10,13 +10,13 @@
                 </li>
             </ul>
         </div>
-        <div class="col-lg-6 pt-1">
-            <ul class="d-flex justify-content-end">
-                <li class="d-block align-items-end mb-0">
-                    <a class="items" href="#"><i class="">Register</i></a>
+        <div class="col-lg-6 pt-1 register">
+            <ul class="d-flex justify-content-end register">
+                <li class="d-block align-items-end">
+                    <a class="items " href="#"><i class="mr-2"></i>Register</a>
                     |
-                    <a class="items" href="#"><i class="mr-5 ">Login</i></a>
-                    <a class="items" href="#"><i class="fa-brands fa-facebook mr-4 "></i></a>
+                    <a class="items mr-3" href="#"><i class="mr-2"></i>Login</a>
+                    <a class="items" href="#"><i class="fa-brands fa-facebook ml-5 mr-4 "></i></a>
                     <a class="items" href="#"><i class="fa-brands fa-whatsapp mr-4 "></i></a>
                     <a class="items" href="#"><i class="fa-brands fa-twitter mr-4 "></i></a>
                     <a class="items" href="#"><i class="fa-brands fa-instagram mr-4 "></i></a>

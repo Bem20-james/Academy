@@ -29,10 +29,6 @@
                         <div class="founder-text">
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has been the industry's</p>
-                            <form class="form-inline my-2 my-lg-0" action="" method="">
-                                <button class="btn btn-outline-success btn-success text-white my-2 my-sm-0" name="btn_login"
-                                    type="submit">See More &rarr;</button>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -43,30 +39,4 @@
             </div>
         </div>
     </section>
-
-    <!-- Get Stated Now -->
-    <div class=" px-5" style="background-color: rgb(0, 137, 55);">
-        <div class="row w-100">
-            <div class="col-lg-6 ">
-                <ul class="">
-                    <li class="d-block mt-2">
-                        <a class="text-white" href="#"><i class=" mb-0"></i>
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                        </a>
-                        <a class="text-white" href="#"><i class=" mt-0">
-                                <h6>Lorem ipsum dolor sit amet, consectetur</h6>
-                            </i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-6 items py-3">
-                <ul class="d-flex justify-content-end">
-                    <li class="d-block mt-2 align-items-end">
-                        <button class="btn btn-outline-white bg-white text-black" name="btn_get_started">GET STARTED
-                            NOW</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
 @endsection

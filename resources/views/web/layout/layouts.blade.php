@@ -1,6 +1,6 @@
-@include('web.components.includes.head')
-@include('web.components.includes.header')
+@include('web.includes.head')
+@include('web.includes.header')
 
 @yield('content')
 
-@include('web.components.includes.footer')
+@include('web.includes.footer')

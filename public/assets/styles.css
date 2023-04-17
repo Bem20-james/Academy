@@ -1,21 +1,35 @@
 /* css code for header and footer */
 .top-head{
-    background-color: rgb(201, 196, 196);
+    background-color: whitesmoke;
 }
+
+.nav-item :hover {
+    background-color: green;
+    height: fit-content;
+  }
+
 .head{
     margin: auto;
 }
 
-.items{
-    align-items: start;
+.footer-main-wrapper{
+    background-color: #151F4F;
 }
-.footer {
-    background: #151F4F;
-    color: white;
+
+.items{
+    color: black;
+}
+
+.homepage-links{
+    margin-right: 15px;
 }
 
 .links ul {
     list-style-type: none;
+}
+
+.socials a{
+    color: white;
 }
 
 li a {
@@ -49,18 +63,35 @@ a:hover {
     border-top: 1px solid rgba(255, 255, 255, .1);
 }
 
-.lines{
-    line-height: 8px;
+.useful-link-listl{
+    line-height: 30px;
+}
+
+.list-unstyled{
+    line-height: 30px;
+}
+
+.footer-content-widget{
+    line-height: 22px;
 }
 
 .check{
     list-style: none;
 }
+
+.nav-link :hover{
+    background-color: #06bf56
+}
+
+
+
+
+
 /* css code for the index */
 .slider img{
     width: auto;
     height: 220px;
-  
+
 }
 .text-center{
     text-align: center;

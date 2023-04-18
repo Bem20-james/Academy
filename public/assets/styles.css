@@ -3,9 +3,12 @@
     background-color: whitesmoke;
 }
 
-.nav-item :hover {
-    background-color: green;
-    height: fit-content;
+.nav-item :hover{
+    background-color:green;
+    /* height: 70px; */
+    transition: 1s;
+    margin: 0;
+    padding: 0;
   }
 
 .head{
@@ -21,7 +24,7 @@
 }
 
 .homepage-links{
-    margin-right: 15px;
+    margin-right: 100px;
 }
 
 .links ul {
@@ -37,14 +40,10 @@ li a {
     transition: color .2s;
 }
 
-li a:hover {
+/* li a:hover {
     text-decoration: none;
     color: #06bf56;
-}
-
-.register{
-    font-family: Tahoma, sans-serif;
-}
+} */
 
 .about-company i {
     font-size: 25px;
@@ -55,9 +54,9 @@ i a {
     transition: color .2s;
 }
 
-a:hover {
+/* a:hover {
     color: #06bf56;
-}
+} */
 
 .location i {
     font-size: 18px;
@@ -83,9 +82,9 @@ a:hover {
     list-style: none;
 }
 
-.nav-link :hover{
+/* .nav-link :hover{
     background-color: #06bf56
-}
+} */
 
 
 

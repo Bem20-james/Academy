@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['namespace' => 'admin'], function (){
-    Route::get('/index', 'HomeController@index')->name('index');
+Route::group(['namespace' => 'admin','prefix' => '/admin',], function (){
+    Route::get('/index', 'HomeController@index')->name('admin.dashboard');
 });
+
 ?>

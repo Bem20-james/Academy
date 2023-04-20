@@ -28,11 +28,11 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>10</h3>
-                <p>Sales</p>
+                <h3>19</h3></h3>
+                <p>Blocks</p>
               </div>
               <div class="icon">
-                <i class="fas fa-shopping-basket"></i>
+                <i class="fa fa-th-list"></i>
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
@@ -43,7 +43,7 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>8</h3>
+                <h3>16</h3>
                 <p>Courses</p>
               </div>
               <div class="icon">
@@ -58,7 +58,7 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>7</h3>
+                <h3>700</h3>
                 <p>Students</p>
               </div>
               <div class="icon">
@@ -73,7 +73,7 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>15</h3>
+                <h3>25</h3>
                 <p>Instructors</p>
               </div>
               <div class="icon">
@@ -116,13 +116,27 @@
 
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-warning">
+            <div class="small-box bg-purple">
               <div class="inner">
                 <h3>10</h3>
                 <p>Payments</p>
               </div>
               <div class="icon">
                 <i class="fas fa-money-bill"></i>
+              </div>
+              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-orange">
+              <div class="inner">
+                <h3>200</h3>
+                <p>Admission</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-file"></i>
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>

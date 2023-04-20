@@ -39,4 +39,184 @@
             </div>
         </div>
     </section>
+
+    {{-- brief history --}}
+    <div class="history">
+        <div class="row">
+            <div class="col-lg-12">
+                    <div class="container text-dark mt-4 mb-5 bg">
+                        <h2>Brief</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut officiis nulla, consequatur quia
+                            voluptates eum. Veritatis ea maxime numquam eum, iste iure optio nihil reprehenderit odio non ducimus
+                            autem perferendis!
+                            Officiis facilis cumque, sapiente cum facere inventore at, nostrum aspernatur, illum eligendi minima?
+                            Blanditiis dignissimos, nesciunt vel itaque rerum voluptatem nemo provident maxime aliquid, consequuntur
+                            hic quam accusantium, doloremque perferendis?
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    {{-- some important facts --}}
+    <div class="bg-light py-5">
+        <div class="text-center">
+            <h2 class="text-uppercase">Some important <span class="text-success">facts</span></h2>
+            <p class="heading_space">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor<br>
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation<br>
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 ">
+                    <div class="bg-white p-3">
+                        <div class="card">
+                            <div class="number-counters text-center mt-30">
+                                <!-- first count item -->
+                                <div class="counters-item counter"> <i class="fa fa-file text-success" aria-hidden="true"></i><br>
+                                    <strong data-to="40">40</strong>
+                                    <p class="text-success">teachers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="bg-white p-3">
+                        <div class="card">
+                            <div class="number-counters text-center mt-30 bg-white">
+                                <!-- first count item -->
+                                <div class="counters-item counter"> <i class="fa fa-th text-success" aria-hidden="true"></i><br>
+                                    <strong data-to="4">4</strong>
+                                    <p class="text-success">Courses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="bg-white p-3">
+                        <div class="card">
+                            <div class="number-counters text-center mt-30 bg-white">
+                                <!-- first count item -->
+                                <div class="counters-item counter"> <i class="fa fa-users text-success" aria-hidden="true"></i><br>
+                                    <strong data-to="2019">2019</strong>
+                                    <p class="text-success">Students</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="bg-white p-3">
+                        <div class="card">
+                            <div class="number-counters text-center mt-30 bg-white">
+                                <!-- first count item -->
+                                <div class="counters-item counter"> <i class="fa fa-th-list text-success" aria-hidden="true"></i><br>
+                                    <strong data-to="520">17</strong>
+                                    <p class="text-success">Blocks</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- Our Gallery --}}
+    <div class="bg-white py-5">
+        <div class="text-center">
+            <h2 class="text-uppercase">Our -<span class="text-success">Gallery</span></h2>
+            <p class="heading">No much about us through our gallery.</p>
+        </div>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 ">
+                    <div class="card">
+                        <img src="{{ asset('assets/images/student2.jpg') }}" alt="">
+                        <div class="p-3">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi itaque incidunt,
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="{{ asset('assets/images/students3.jpg') }}" alt="">
+                        <div class="p-3">
+                            <p>
+                                voluptatem consectetur, tenetur iusto, nihil repellat sit aliquid vero ipsum nobis
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="{{ asset('assets/images/students.jpg') }}" alt="">
+                        <div class="p-3">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi itaque incidunt,
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="{{ asset('assets/images/students.jpg') }}" alt="">
+                        <div class="p-3">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi itaque incidunt,
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <div class="card">
+                        <img src="{{ asset('assets/images/students.jpg') }}" alt="">
+                        <div class="p-3">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi itaque incidunt,
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <div class="card">
+                        <img src="{{ asset('assets/images/students.jpg') }}" alt="">
+                        <div class="p-3">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi itaque incidunt,
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <div class="card">
+                        <img src="{{ asset('assets/images/students.jpg') }}" alt="">
+                        <div class="p-3">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi itaque incidunt,
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <div class="card">
+                        <img src="{{ asset('assets/images/students.jpg') }}" alt="">
+                        <div class="p-3">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi itaque incidunt,
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

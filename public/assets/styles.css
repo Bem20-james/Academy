@@ -40,10 +40,18 @@ li a {
     transition: color .2s;
 }
 
-/* li a:hover {
+.history{
+    background-color: rgb(249, 237, 223);
+}
+
+.counter{
+    font-size: x-large;
+}
+
+li a:hover {
     text-decoration: none;
     color: #06bf56;
-} */
+}
 
 .about-company i {
     font-size: 25px;

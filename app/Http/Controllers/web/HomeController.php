@@ -22,8 +22,8 @@ class HomeController extends Controller
     public function register(){
         return view('auth.register');
     }
-    
-    public function about_more(){
+
+    public function about_us(){
         return view('web.pages.about_us_more');
     }
 }

@@ -28,7 +28,7 @@
 </div>
 
 <!-- Main-Hearder -->
-<nav class="navbar navbar-expand-lg navbar-light p-0 m-0 d-flex" style="background-color: #154F4F;">
+<nav class="navbar navbar-expand-lg navbar-light p-0 m-0 d-flex" style="background-color: #151F4F;">
     <div class="container">
         <img src="assets/images\Logo Academia.png" width="80px" height="auto" alt="Academia Logo">
         <button class="navbar-toggler p-0 m-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

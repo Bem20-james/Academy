@@ -17,9 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::group(['namespace' => 'web'], function (){
     Route::get('/', 'HomeController@index')->name('index');
     Route::get('/about_us', 'HomeController@about')->name('about');
+    Route::get('/about_us_more', 'HomeController@about_us')->name('about_us_more');
 
-    //Auth routes
-    Route::get('/login', 'HomeController@login')->name('login');
-    Route::get('/register', 'HomeController@register')->name('register');
-    Route::get('/about_us_more', 'HomeController@about_more')->name('about_us_more');
 });
+
+

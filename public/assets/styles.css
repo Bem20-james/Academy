@@ -1,21 +1,38 @@
 /* css code for header and footer */
 .top-head{
-    background-color: rgb(201, 196, 196);
+    background-color: whitesmoke;
 }
+
+.nav-item :hover{
+    background-color:green;
+    /* height: 70px; */
+    transition: 1s;
+    margin: 0;
+    padding: 0;
+  }
+
 .head{
     margin: auto;
 }
 
-.items{
-    align-items: start;
+.footer-main-wrapper{
+    background-color: #151F4F;
 }
-.footer {
-    background: #151F4F;
-    color: white;
+
+.items{
+    color: black;
+}
+
+.homepage-links{
+    margin-right: 100px;
 }
 
 .links ul {
     list-style-type: none;
+}
+
+.socials a{
+    color: white;
 }
 
 li a {
@@ -23,10 +40,10 @@ li a {
     transition: color .2s;
 }
 
-li a:hover {
+/* li a:hover {
     text-decoration: none;
     color: #06bf56;
-}
+} */
 
 .about-company i {
     font-size: 25px;
@@ -37,9 +54,9 @@ i a {
     transition: color .2s;
 }
 
-a:hover {
+/* a:hover {
     color: #06bf56;
-}
+} */
 
 .location i {
     font-size: 18px;
@@ -49,13 +66,30 @@ a:hover {
     border-top: 1px solid rgba(255, 255, 255, .1);
 }
 
-.lines{
-    line-height: 8px;
+.useful-link-listl{
+    line-height: 30px;
+}
+
+.list-unstyled{
+    line-height: 30px;
+}
+
+.footer-content-widget{
+    line-height: 22px;
 }
 
 .check{
     list-style: none;
 }
+
+/* .nav-link :hover{
+    background-color: #06bf56
+} */
+
+
+
+
+
 /* css code for the index */
 .images{
     height: 75vh;

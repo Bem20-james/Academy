@@ -21,4 +21,5 @@ Route::group(['namespace' => 'web'], function (){
     //Auth routes
     Route::get('/login', 'HomeController@login')->name('login');
     Route::get('/register', 'HomeController@register')->name('register');
+    Route::get('/about_us_more', 'HomeController@about_more')->name('about_us_more');
 });

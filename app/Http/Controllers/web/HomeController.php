@@ -23,4 +23,7 @@ class HomeController extends Controller
         return view('auth.register');
     }
     
+    public function about_more(){
+        return view('web.pages.about_us_more');
+    }
 }

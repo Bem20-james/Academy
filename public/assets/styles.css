@@ -63,6 +63,20 @@ a:hover {
     position: relative;
     object-fit: cover;
     object-position: center;
+    background: black;
+}
+.carousel-caption{
+    text-align: center;
+    padding-bottom: 300px;
+    color: rgb(183, 164, 164);
+}
+
+.image{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
 }
 .slider img{
     width: auto;
@@ -75,7 +89,7 @@ a:hover {
     font-weight: bold;
 }
 .row{
-    margin-top: 20;
+    margin-top:20px;
     cursor: pointer;
 }
 
@@ -96,11 +110,29 @@ a:hover {
       width: auto;
       height: 15%;
   }
+  .container-4{
+      display: flex;
+  }
   .we-are{
       font-weight:400;
       font-style: normal;
       text-decoration: solid;
       background-color: rgb(207, 200, 200);
+  }
+  .row-img{
+      padding-right: 100px;
+  }
+  .container{
+    /* justify-content: center; */
+     /* width: 50%;
+     padding: 50px; */
+  }
+  .media-heading{
+      padding: 20px 50px;
+      font: 18px;
+      display: flex;
+      
+      
   }
 /* end of index css */
 
@@ -212,7 +244,7 @@ a:hover {
  }
 
  /* adding padding to container */
- .container{
+ .container-2{
     justify-content: center;
     width: 50%;
     padding: 50px;

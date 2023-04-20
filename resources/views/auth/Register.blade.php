@@ -3,7 +3,7 @@
 <div class="row">
     <img class="bg-wrap-2"  src="{{ asset('assets/images/b3.jpg') }}" alt="">
 </div>
-<div class="container">
+<div class="container w-100">
         <form action="">
             <div class="contains">
                 <div class="heading py-0">

@@ -1,190 +1,68 @@
 @extends('web.layout.layouts')
 @section('content')
 
-<!-- HOME PAGE -->
-    <div class="bg-black">
+                    <!-- HOME PAGE -->
+    <div class="">
         <div id="demo" class="carousel slide" data-ride="carousel">
 
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
+                    <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
 
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="{{asset('assets/images/peters.jpg')}}" class="images d-block w-100" alt="Los Angeles">
-                    <div class="carousel-content">
-                        <h1>PROUDLY, ADVANZTEK TO THE WORLD</h1> <br>
-                        <h4>AM HAPPY FOR THIS SCHOLARSHIP OFFER</h4>
+                    <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{asset ('assets/images/peters.jpg')}}" class="w-100" alt="slide 1">
+                    <div class="carousel-caption">
+                        <h2 class="text-uppercase">proudly, advanztek to the world</h2>
+                        <p class="text-uppercase">we are students of advanztek</p>
+                        <i>
+                            <a href=""class="text-uppercase">peter terlumun atule</a>
+                        </i> 
                     </div>
-                <div class="carousel-caption" >
-                    <h1>Jacob Tarkumbur Oraduen</h1>
                 </div>
+                <div class="carousel-item">
+                    <img src="{{asset ('assets/images/academia.jpg')}}" alt="slide 2">
+                    <div class="carousel-caption">
+                        <h2 class="text-uppercase">proudly, advanztek to the world</h2>
+                        <p class="text-uppercase">we are students of advanztek</p>
+                        <i>
+                            <a href=""class="text-uppercase">peter terlumun atule</a>
+                        </i> 
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{asset ('assets/images/student smile.webp')}}" alt="New York">
+                    <div class="carousel-caption">
+                        <h2 class="text-uppercase">proudly, advanztek to the world</h2>
+                        <p class="text-uppercase">we are students of advanztek</p>
+                        <i>
+                            <a href=""class="text-uppercase">peter terlumun atule</a>
+                        </i> 
+                    </div>
+                </div>
+            </div>
+
+                    <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-">
+                <h2></h2>
             </div>
         </div>
-        <div class="item">
-            <div class="carousel-item">
-                <img src="{{asset('assets/images/academia.jpg')}}" class="images " alt="Chicago">
-                <div class="carousel-content">
-                    <h1>PROUDLY, ADVANZTEK TO THE WORLD</h1> <br>
-                    <h4>AM HAPPY FOR THIS SCHOLARSHIP OFFER</h4>
-                </div>
-                <div class="carousel-caption" >
-                    <h1>Elder Usue Terkula Gabriel</h1>
-                </div>
-            </div>
 
-            <div class="carousel-item">
-                <img src="{{asset('assets/images/ladycomputer.jpg')}}" class="images"  alt="New York">
-                <div class="carousel-content">
-                    <h1>PROUDLY, ADVANZTEK TO THE WORLD</h1> <br>
-                    <h4>AM HAPPY FOR THIS SCHOLARSHIP OFFER</h4>
-                </div>
-                <div class="carousel-caption" >
-                    <h1>Comrade Peter Terlumun Atule</h1>
-                </div>
-            </div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-
-        <div class="why Educare">
-            <div class="from-the-best">
-                <div class="container py-5">
-                    <div class="text-center">
-                        <h2 class="text-uppercase text-black">why chose 
-                            <span class="text-success">Educare</span>
-                        </h2>
-                    </div>
-                    <div class="text-center"> 
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa temporibus corrupti nesciunt <br>
-                            odit necessitatibus maxime aspernatur ab aut, tempora quos, recusandae aliquid <br>
-                            molestiae excepturi impedit sed atque unde quas consectetur.
-                        </p>   
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-5 col-md-7 col-sm-12">
-                            <div class="">
-                                <img src="{{asset('images/main-feature.png')}}" alt="">
-                            </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="row">
-                                <div class="col-3">
-                                    <i class="fa-solid fa-facebook-square"></i>
-                                </div>
-                                <div class="col-9">
-                                    <h4>RESIDENTIAL SERVICES</h4>
-                                        <p>Backed by some of the biggest names in the industry,
-                                        Firefox OS is an open platform that fosters greater</p>
-                                </div>
-                                <div class="col-3">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                                <div class="col-9">
-                                    <h4>COMMERCIAL SERVICES</h4>
-                                        <p>Backed by some of the biggest names in the industry, 
-                                        Firefox OS is an open platform that fosters greater</p>
-                                </div>
-                                <div class="col-3">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                                <div class="col-9">
-                                    <h4>OUR BEST STAFF</h4>
-                                        <p>Backed by some of the biggest names in the industry, 
-                                        Firefox OS is an open platform that fosters greater</p>
-                                </div>
-                                <div class="col-3">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                                <div class="col-9">
-                                    <h4>24 HOURS SERVICES</h4>
-                                        <p>Backed by some of the biggest names in the industry,
-                                        Firefox OS is an open platform that fosters greater</p>
-                                </div>
-                            </div>
-                    </div>
-                </div>      
-            </div>
-            <!-- PHOTO GALLERY -->
-            <div class="bg-light">
-                <div class="container py-5">
-                    <div class="text-center">
-                        <h2 class="text-uppercase text-black">photo <span class="text-success">
-                            Gallery</span>
-                        </h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="card mb-4">
-                                <img src="{{asset('assets/images/1.jpg')}}" alt="" srcset="">
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img src="{{asset('assets/images/2.jpg')}}" alt="" srcset="">
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img src="{{asset('assets/images/3.jpg')}}" alt="" srcset="">
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img src="{{asset('assets/images/4.jpg')}}" alt="" srcset="">
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img src="{{asset('assets/images/5.jpg')}}" alt="" srcset="">
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img src="{{asset('assets/images/6.jpg')}}" alt="" srcset="">
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img src="{{asset('assets/images/7.jpg')}}" alt="" srcset="">
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img src="{{asset('assets/images/8.jpg')}}" alt="" srcset="">
-                            </div>
-                        </div>
-                    </div>
-                </div>    
-            </div>
-            </div>
-            <div class="we-are">
-                <div class="container py-5">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="">
-                            <h2>We Are With You Every Step <br>
-                                Get Started Easily. 
-                            </h2><br>
-                            <span>Make your Website Faster, Safer & Better Support.</span> 
-                        </div>
-                        <div >
-                            <button class="btn btn-success btn-pill">GET STARTED NOW!</button> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
 @endsection
 
 

@@ -120,6 +120,7 @@ i a {
     background-size: cover;
     background-position: center;
 }
+
 .slider img{
     width: auto;
     height: 70vh;
@@ -134,6 +135,20 @@ i a {
     margin-top:20px;
     cursor: pointer;
 }
+.border-inner{
+    margin: 12px;
+}
+.factors{
+    height: 400px;
+    width: 100%;
+    background: rgb(197, 189, 189);
+}
+ .card{
+    color: #12876f;
+    border: #151F4F;
+    border-width: 100px; 
+    border-spacing: 200px; 
+} 
 
 .carousel-content {
     position:absolute;

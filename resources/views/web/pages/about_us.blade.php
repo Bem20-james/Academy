@@ -90,7 +90,7 @@
             <ul class="d-flex justify-content-end">
                 <li class="d-block mt-2 align-items-end">
                     <button class="btn btn-outline-white bg-white text-black" name="btn_get_started">GET STARTED
-                        NOW</button> Append bootstrap
+                        NOW</button>
                 </li>
             </ul>
         </div>

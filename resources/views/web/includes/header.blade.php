@@ -30,7 +30,7 @@
 <!-- Main-Hearder -->
 <nav class="navbar navbar-expand-lg navbar-light p-0 m-0 d-flex" style="background-color: #151F4F;">
     <div class="container">
-        <img src="assets/images\Logo Academia.png" width="80px" height="auto" alt="Academia Logo">
+        <img src="{{ asset('assets/images/logo-academia.png') }}" width="80px" height="auto" alt="Academia Logo">
         <button class="navbar-toggler p-0 m-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -55,9 +55,8 @@
                 <a class="nav-link text-white p-4 mx-2" href="#">Gallery</a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0 ">
-            <button class="btn btn-outline-success btn-success text-white my-2 my-sm-0" name="btn_login"
-                type="submit">Login</button>
-        </form>
+        <a href="{{ route('about') }}" class="my-2 my-lg-0 ">
+            <button class="btn btn-success text-white my-2 my-sm-0">Login</button>
+        </a>
     </div>
 </nav>

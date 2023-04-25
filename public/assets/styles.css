@@ -1,29 +1,30 @@
 /* css code for header and footer */
-.top-head{
+
+.top-head {
     background-color: whitesmoke;
 }
 
-.nav-item :hover{
-    background-color:green;
+.nav-item :hover {
+    background-color: green;
     /* height: 70px; */
     transition: 1s;
     margin: 0;
     padding: 0;
-  }
+}
 
-.head{
+.head {
     margin: auto;
 }
 
-.footer-main-wrapper{
+.footer-main-wrapper {
     background-color: #151F4F;
 }
 
-.items{
+.items {
     color: black;
 }
 
-.homepage-links{
+.homepage-links {
     margin-right: 100px;
 }
 
@@ -31,7 +32,7 @@
     list-style-type: none;
 }
 
-.socials a{
+.socials a {
     color: white;
 }
 
@@ -40,11 +41,11 @@ li a {
     transition: color .2s;
 }
 
-.history{
+.history {
     background-color: rgb(249, 237, 223);
 }
 
-.counter{
+.counter {
     font-size: x-large;
 }
 
@@ -62,6 +63,7 @@ i a {
     transition: color .2s;
 }
 
+
 /* a:hover {
     color: #06bf56;
 } */
@@ -74,32 +76,31 @@ i a {
     border-top: 1px solid rgba(255, 255, 255, .1);
 }
 
-.useful-link-listl{
+.useful-link-listl {
     line-height: 30px;
 }
 
-.list-unstyled{
+.list-unstyled {
     line-height: 30px;
 }
 
-.footer-content-widget{
+.footer-content-widget {
     line-height: 22px;
 }
 
-.check{
+.check {
     list-style: none;
 }
+
 
 /* .nav-link :hover{
     background-color: #06bf56
 } */
 
 
-
-
-
 /* css code for the index */
-.images{
+
+.images {
     height: 75vh;
     width: 100%;
     position: relative;
@@ -107,13 +108,14 @@ i a {
     object-position: center;
     background: black;
 }
-.carousel-caption{
+
+.carousel-caption {
     text-align: center;
     padding-bottom: 300px;
     color: rgb(183, 164, 164);
 }
 
-.image{
+.image {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -121,88 +123,92 @@ i a {
     background-position: center;
 }
 
-.slider img{
+.slider img {
     width: auto;
     height: 70vh;
 }
-.text-center{
+
+.text-center {
     text-align: center;
     font-size: medium;
     font-style: italic;
     font-weight: bold;
 }
-.row{
-    margin-top:20px;
-    cursor: pointer;
-}
-.border-inner{
+
+.border-inner {
     margin: 12px;
 }
-.factors{
+
+.factors {
     height: 400px;
     width: 100%;
     background: rgb(197, 189, 189);
 }
- .card{
+
+.card {
     color: #12876f;
     border: #151F4F;
-    border-width: 100px; 
-    border-spacing: 200px; 
-} 
+    border-width: 100px;
+    border-spacing: 200px;
+}
 
 .carousel-content {
-    position:absolute;
+    position: absolute;
     bottom: 50%;
     left: 25%;
     z-index: 20;
     color: rgb(215, 189, 189);
     text-shadow: rgb(60, 142, 60);
-  }
-  .courses{
-      height: 400px;
-      width: 100%;
-  }
-  .from-the-best{
-      background-color: whitesmoke;
-      width: auto;
-      height: 15%;
-  }
-  .container-4{
-      display: flex;
-  }
-  .we-are{
-      font-weight:400;
-      font-style: normal;
-      text-decoration: solid;
-      background-color: rgb(207, 200, 200);
-  }
-  .row-img{
-      padding-right: 100px;
-  }
-  .container{
-    /* justify-content: center; */
-     /* width: 50%;
-     padding: 50px; */
-  }
-  .media-heading{
-      padding: 20px 50px;
-      font: 18px;
-      display: flex;
-      
-      
-  }
+}
+
+.courses {
+    height: 400px;
+    width: 100%;
+}
+
+.from-the-best {
+    background-color: whitesmoke;
+    width: auto;
+    height: 15%;
+}
+
+.container-4 {
+    display: flex;
+}
+
+.we-are {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: solid;
+    background-color: rgb(207, 200, 200);
+}
+
+.row-img {
+    padding-right: 100px;
+}
+
+.media-heading {
+    padding: 20px 50px;
+    font: 18px;
+    display: flex;
+}
+
+
 /* end of index css */
 
- /* ======== Css for login and registration ========= */
 
-.text{
-   color: #151F4F;
+/* ======== Css for login and registration ========= */
+
+.text {
+    color: #151F4F;
 }
-.bg-color{
+
+.bg-color {
     background-color: #06bf56;
     color: white;
 }
-.bg-wrap{
+
+.bg-wrap {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -210,156 +216,174 @@ i a {
     background-position: center;
 }
 
-.bg-wrap-2{
+.bg-wrap-2 {
     position: relative;
     height: 120vh;
     width: 100%;
     background-size: cover;
     background-position: center;
 }
-    
- .wrapper{
-     width: 100%;
-     background-image: -moz-element();
-     border-radius: 5px;
-     color: #fff;
-     box-shadow: 0px 4px 10px 1px rgb(red, green, blue);
- }
- .bg-img{
-     background-size: cover;
-     background-image: asset ('assets/images/main-feature') ;
- }
 
- .wrapper .title{
-     height: 90px;
-     background: #16a085;
-     border-radius: 5px 5px 0 0;
-     color: #fff;
-     font-size: 30px;
-     font-weight: 600;
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
+.wrapper {
+    width: 100%;
+    background-image: -moz-element();
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0px 4px 10px 1px rgb(red, green, blue);
+}
 
- .wrapper form .row{
-     height: 45px;
-     margin: bottom 15px;
-     position: relative;
- }
+.bg-img {
+    background-size: cover;
+    background-image: asset ('assets/images/main-feature');
+}
 
- .wrapper form .row input{
-     height: 100%;
-     width: 100%;
-     outline: none;
-     padding-left: 60px;
-     border-radius: 5px;
-     border: 1px solid lightgreen;
-     font-size: 16px;
-     transition: all 0.4s ease;
- }
- .wrapper form .row{
-     position: absolute;
-     width: 47px;
-     height: 100%;
-     color: #fff;
-     font-size: 18px;
-     background: #16a085;
-     border: 1px solid #16a085;
-     align-items: center;
-     justify-content: center;
- }
+.wrapper .title {
+    height: 90px;
+    background: #16a085;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
- .wrapper form .pass{
+.wrapper form .row {
+    height: 45px;
+    margin: bottom 15px;
+    position: relative;
+}
+
+.wrapper form .row input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid lightgreen;
+    font-size: 16px;
+    transition: all 0.4s ease;
+}
+
+.wrapper form .row {
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: #16a085;
+    border: 1px solid #16a085;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper form .pass {
     margin: -8px 0 20px 0;
- }
- .wrapper form .pass a{
-     color: #16a085;
-     font-size: 17px;
-     text-decoration: none;
- }
- .wrapper form .pass a:hover{
-     text-decoration: underline;
-     background: #16a085;
-     border: 1px solid #16a085;
-     cursor: pointer;
- }
- form .button input:hover{
-     background: #12876f;
- }
- .wrapper form .signup-link{
-     text-align: center;
-     margin-top: 20px;
-     font-size: 17px;
- }
- .wrapper form .signup-link a{
-     color: #16a085;
-     text-decoration: none;
- }
- .form .signup-link a:hover{
-     text-decoration: underline;
- }
+}
 
- /* adding padding to container */
- .container-2{
+.wrapper form .pass a {
+    color: #16a085;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.wrapper form .pass a:hover {
+    text-decoration: underline;
+    background: #16a085;
+    border: 1px solid #16a085;
+    cursor: pointer;
+}
+
+form .button input:hover {
+    background: #12876f;
+}
+
+.wrapper form .signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.wrapper form .signup-link a {
+    color: #16a085;
+    text-decoration: none;
+}
+
+.form .signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* adding padding to container */
+
+.container-2 {
     justify-content: center;
     width: 50%;
     padding: 50px;
-
 }
-.heading{
+
+.heading {
     text-align: center;
     color: blue;
 }
- .contains{
+
+.contains {
     padding: 25px;
     justify-content: center;
     background-color: #ddd;
-    justify-content: right; 
+    justify-content: right;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     position: absolute;
     opacity: 0.7;
     top: 250px;
- } 
+}
 
- /* input fields width */
- .combined-2 {
-     width: 100%;
-     padding: 15px;
-     display: inline-block;
-     border: none;
-     text-emphasis: none;
-     color: rgb(8, 8, 67)
- }
 
- .registerbtn:hover{
-     opacity: 1;
- }
-  /* text color to link */
-  a{
-      color: dodgerblue;
-  }
+/* input fields width */
 
-  /* sigin section */
-   .signin{
-      background-color: #f1f1f1;
-      justify-content: center;
-      color: rgb(8, 8, 67)
-  } 
-  
-  .exist-account{
-      text-align: center;
-      justify-content: center;
-      color: rgb(8, 8, 67)
-    
-  }
-  .privacy{
-      text-align: center;
-      /* font: 1em sans-serif; */
-      justify-content: center;
-      color: rgb(8, 8, 67)
-      
-  }
-  /* =====End of Css for Registration========== */
-  
+.combined-2 {
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    border: none;
+    text-emphasis: none;
+    color: rgb(8, 8, 67)
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+
+/* text color to link */
+
+a {
+    color: dodgerblue;
+}
+
+
+/* sigin section */
+
+.signin {
+    background-color: #f1f1f1;
+    justify-content: center;
+    color: rgb(8, 8, 67)
+}
+
+.exist-account {
+    text-align: center;
+    justify-content: center;
+    color: rgb(8, 8, 67)
+}
+
+.privacy {
+    text-align: center;
+    /* font: 1em sans-serif; */
+    justify-content: center;
+    color: rgb(8, 8, 67)
+}
+
+
+/* =====End of Css for Registration========== */

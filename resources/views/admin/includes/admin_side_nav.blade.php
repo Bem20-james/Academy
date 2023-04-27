@@ -39,9 +39,9 @@
           </li>
 
           <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="{{ route('view_instructors') }}" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
-              <p>Instructors</p>
+              <p>Teachers</p>
             </a>
           </li>
 

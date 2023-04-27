@@ -3,7 +3,7 @@
 <div class="row">
     <img class="bg-wrap-2"  src="{{ asset('assets/images/b3.jpg') }}" alt="">
 </div>
-<div class="container w-100">
+<div class=" w-100">
         @if (count($errors) > 0)
         <ul class="list-group">
             @foreach ($errors->all() as $error)
@@ -13,6 +13,7 @@
             @endforeach
         </ul>
         @endif
+
         <form action="{{ route('process.reg') }}" method="POST">
             @csrf
             <div class="contains">
@@ -36,7 +37,7 @@
                         </label>
                         <input type="text" placeholder="Last Name" class="form-control" name="last_name" required>
 
-                        <input type="hidden" name="role" value="4">
+                        <input type="hidden" name="role" value="3">
 
                     </div>
                     <div class="form-group">
@@ -72,8 +73,7 @@
                 </div>
                     <div class="exist-account">
                         <p>Already have an account?
-                            <a href="{{ route('login') }}">sign in</a> ||
-                            <a href="{{ route ('register_teachers')}}">Teacher's Sign-Up</a>
+                            <a href="{{ route('login') }}">sign in</a>
                         </p>
                     </div>
                 </div>

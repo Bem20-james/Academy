@@ -95,11 +95,9 @@
 </div>
 
 
-
-</body>
 <script src="{{ asset('assets/plugin/fa-6-web/js/all.js') }}"></script>
 <script src="{{ asset('assets/plugin/jquery2/main.js') }}"></script>
 <script src="{{ asset('assets/plugin/jquery2/jquery-3.2.1.min.js') }}"></script>
-<script src="{{ asset('styles/js/bootstrap.js') }}"></script>
-
+<script src="{{ asset('assets/plugin/jquery2/bootstrap.min.js') }}"></script>
+</body>
 </html>

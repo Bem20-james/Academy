@@ -14,11 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::group(['namespace' => 'web'], function (){
+Route::group(['namespace' => 'web', 'prefix' => 'web', 'middleware' => 'web'], function (){
     Route::get('/', 'HomeController@index')->name('index');
-    Route::get('/about_us', 'HomeController@about')->name('about');
-    Route::get('/about_us_more', 'HomeController@about_us')->name('about_us_more');
-
+    Route::get('/about_us', 'HomeController@about')->name('about_us');
 });
+
+Route::group(['namespace' => 'auth', 'prefix' => 'auth', 'middleware' => 'auth'], function (){
+    Route::get('/login', 'AuthController@login')->name('login');
+    Route::get('/register', 'AuthController@register')->name('register');
+    Route::get('/register_teachers', 'AuthController@registerTeach')->name('register_teachers');
+    Route::post('/process/reg', 'AuthController@processReg')->name('process.reg');
+    Route::get('/process/login', 'AuthController@processLogin')->name('process.login');
+});
+
+
 
 

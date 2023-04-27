@@ -1,6 +1,8 @@
 /* css code for header and footer */
 .top-head{
     background-color: whitesmoke;
+    margin: 0%;
+    padding: 0%;
 }
 
 .nav-item :hover{
@@ -107,11 +109,11 @@ i a {
     object-position: center;
     background: black;
 }
-.carousel-caption{
+/* .carousel-caption{
     text-align: center;
     padding-bottom: 300px;
     color: rgb(183, 164, 164);
-}
+} */
 
 .image{
     position: relative;
@@ -135,14 +137,14 @@ i a {
     cursor: pointer;
 }
 
-.carousel-content {
+/* .carousel-content {
     position:absolute;
     bottom: 50%;
     left: 25%;
     z-index: 20;
     color: rgb(215, 189, 189);
     text-shadow: rgb(60, 142, 60);
-  }
+  } */
   .courses{
       height: 400px;
       width: 100%;
@@ -164,17 +166,36 @@ i a {
   .row-img{
       padding-right: 100px;
   }
-  .container{
-    /* justify-content: center; */
-     /* width: 50%;
-     padding: 50px; */
-  }
+  /* .container{
+    justify-content: center;
+     width: 50%;
+     padding: 50px;
+  } */
+
   .media-heading{
       padding: 20px 50px;
       font: 18px;
       display: flex;
-      
-      
+  }
+
+  .texted_on_image {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:  center;
+  }
+  .h3{
+    font-size: x-large;
+  }
+  .h1{
+    font-size: 8cqh;
   }
 /* end of index css */
 
@@ -202,7 +223,7 @@ i a {
     background-size: cover;
     background-position: center;
 }
-    
+
  .wrapper{
      width: 100%;
      background-image: -moz-element();
@@ -300,13 +321,13 @@ i a {
     padding: 25px;
     justify-content: center;
     background-color: #ddd;
-    justify-content: right; 
+    justify-content: right;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     position: absolute;
     opacity: 0.7;
     top: 250px;
- } 
+ }
 
  /* input fields width */
  .combined-2 {
@@ -331,20 +352,20 @@ i a {
       background-color: #f1f1f1;
       justify-content: center;
       color: rgb(8, 8, 67)
-  } 
-  
+  }
+
   .exist-account{
       text-align: center;
       justify-content: center;
       color: rgb(8, 8, 67)
-    
+
   }
   .privacy{
       text-align: center;
       /* font: 1em sans-serif; */
       justify-content: center;
       color: rgb(8, 8, 67)
-      
+
   }
   /* =====End of Css for Registration========== */
-  
+

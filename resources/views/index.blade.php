@@ -1,69 +1,54 @@
 @extends('web.layout.layouts')
 @section('content')
-<!-- HOME PAGE -->
-<div class="bg-white">
-    <div id="demo" class="carousel slide" data-ride="carousel">
+    <!-- HOME PAGE -->
 
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
-
-        <!-- The slideshow -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="{{ asset('images/peters.jpg') }}" class="images d-block w-100" style="height:500px;"
-                    alt="Los Angeles">
-                <div class="carousel-content">
-                    <h1>PROUDLY, ADVANZTEK TO THE WORLD</h1> <br>
-                    <h4>AM HAPPY FOR THIS SCHOLARSHIP OFFER</h4>
+                <div class="text_on_image">
+                    <img class="d-block w-100" src="{{ asset('assets/images/calo.jpg') }}" alt="First slide">
+                    <div class="centered text-white">
+                        <h3 class="h3">You only have to know one thing</h3>
+                        <h1 class="h1"><b>CAN LEARN ANYTHING</b> </h1>
+                        <h5 class="h5">Education is the best kill on all that we do on this earth</h5>
+                        <h6 class="h6">It has survived not only five centuries</h6>
+                        <a href="#"><button class="btn btn-outline-white bg-success text-white" name="btn_get_started">GET STARTED
+                            NOW!</button></a>
+                    </div>
                 </div>
-                <div class="carousel-caption">
-                    <h1>Jacob Tarkumbur Oraduen</h1>
-                </div>
-            </div>
-            <div class="item">
-
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('images/academia.jpg') }}" class="images d-block w-100" style="height:500px;"
-                    alt="Chicago">
-                <div class="carousel-content">
-                    <h1>PROUDLY, ADVANZTEK TO THE WORLD</h1> <br>
-                    <h4>AM HAPPY FOR THIS SCHOLARSHIP OFFER</h4>
+                <div class="text_on_image">
+                    <img class="d-block w-100" src="{{ asset('assets/images/calo1.jpg') }}" alt="Second slide">
+                    <div class="centered text-white">
+                        <h3 class="h3">You only have to know one thing</h3>
+                        <h1 class="h1"><b>CAN LEARN ANYTHING</b> </h1>
+                        <h5 class="h5">Education is the best kill on all that we do on this earth</h5>
+                        <h6 class="h6">It has survived not only five centuries</h6>
+                        <a href="#"><button class="btn btn-outline-white bg-success text-white" name="btn_get_started">GET STARTED
+                            NOW!</button></a>
+                    </div>
                 </div>
-                <div class="carousel-caption">
-                    <h1>Elder Usue Terkula Gabriel</h1>
-                </div>
-            </div>
-            <div class="item">
+                {{-- <img class="d-block w-100" src="{{ asset('assets/images/calo1.jpg') }} " alt="Second slide"> --}}
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('images/ladycomputer.jpg') }}" class="images d-block w-100" style="height:500px;"
-                    alt="New York">
-                <div class="carousel-content">
-                    <h1>PROUDLY, ADVANZTEK TO THE WORLD</h1> <br>
-                    <h4>AM HAPPY FOR THIS SCHOLARSHIP OFFER</h4>
+                <div class="text_on_image">
+                    <img class="d-block w-100" src="{{ asset('assets/images/3.jpg') }}" alt="Third slide">
+                    <div class="centered text-white">
+                        <h3 class="h3">You only have to know one thing</h3>
+                        <h1 class="h1"><b>CAN LEARN ANYTHING</b> </h1>
+                        <h5 class="h5">Education is the best kill on all that we do on this earth</h5>
+                        <h6 class="h6">It has survived not only five centuries</h6>
+                        <a href="#"><button class="btn btn-outline-white bg-success text-white" name="btn_get_started">GET STARTED
+                            NOW!</button></a>
+                    </div>
                 </div>
-                <div class="carousel-caption">
-                    <h1>Comrade Peter Terlumun Atule</h1>
-                </div>
-            </div>
-            <div class="item">
+                {{-- <img class="d-block w-100" src="{{ asset('assets/images/3.jpg') }}"alt="Third slide"> --}}
             </div>
         </div>
-
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-
     </div>
+
+    {{-- Why academia --}}
     <div class="">
         <div class="why Educare">
             <div class="from-the-best">
@@ -80,19 +65,18 @@
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa temporibus corrupti nesciunt
                             <br>
                             odit necessitatibus maxime aspernatur ab aut, tempora quos, recusandae aliquid <br>
-                            molestiae excepturi impedit sed atque unde quas consectetur.</p>
+                            molestiae excepturi impedit sed atque unde quas consectetur.
+                        </p>
                     </div>
                     <div class="">
 
                     </div>
-                    <div class="row">
+                    <div class="row w-100">
                         <div class="col-lg-5 col-md-7 col-sm-12">
-                            <div class="">
-                                <img src="{{ asset('images/main-feature.png') }}" alt="">
-                            </div>
+                            <img src="{{ asset('assets/images/main-feature.png') }}" alt="">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="row">
+                            <div class="row w-100">
                                 <div class="col-3">
                                     <i class="fa-solid fa-facebook-square"></i>
                                 </div>
@@ -142,45 +126,45 @@
 
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row w-100">
                             <div class="col-lg-3">
                                 <div class="card mb-4">
-                                    <img src="{{ asset('images/1.jpg') }}" alt="" srcset="">
+                                    <img src="{{ asset('assets/images/1.jpg') }}" alt="" srcset="">
                                 </div>
                             </div>
                             <div class="col-lg-3">
                                 <div class="card">
-                                    <img src="{{ asset('images/2.jpg') }}" alt="" srcset="">
+                                    <img src="{{ asset('assets/images/2.jpg') }}" alt="" srcset="">
                                 </div>
                             </div>
                             <div class="col-lg-3">
                                 <div class="card">
-                                    <img src="{{ asset('images/3.jpg') }}" alt="" srcset="">
+                                    <img src="{{ asset('assets/images/3.jpg') }}" alt="" srcset="">
                                 </div>
                             </div>
                             <div class="col-lg-3">
                                 <div class="card">
-                                    <img src="{{ asset('images/4.jpg') }}" alt="" srcset="">
+                                    <img src="{{ asset('assets/images/4.jpg') }}" alt="" srcset="">
                                 </div>
                             </div>
                             <div class="col-lg-3">
                                 <div class="card">
-                                    <img src="{{ asset('images/5.jpg') }}" alt="" srcset="">
+                                    <img src="{{ asset('assets/images/5.jpg') }}" alt="" srcset="">
                                 </div>
                             </div>
                             <div class="col-lg-3">
                                 <div class="card">
-                                    <img src="{{ asset('images/6.jpg') }}" alt="" srcset="">
+                                    <img src="{{ asset('assets/images/6.jpg') }}" alt="" srcset="">
                                 </div>
                             </div>
                             <div class="col-lg-3">
                                 <div class="card">
-                                    <img src="{{ asset('images/7.jpg') }}" alt="" srcset="">
+                                    <img src="{{ asset('assets/images/7.jpg') }}" alt="" srcset="">
                                 </div>
                             </div>
                             <div class="col-lg-3">
                                 <div class="card">
-                                    <img src="{{ asset('images/8.jpg') }}" alt="" srcset="">
+                                    <img src="{{ asset('assets/images/8.jpg') }}" alt="" srcset="">
                                 </div>
                             </div>
                         </div>
@@ -209,7 +193,7 @@
         <!-- templete -->
         <section id="main-features" class="padding gray">
             <div class="container">
-                <div class="row mb-20">
+                <div class="row w-100 mb-20">
                     <div class="col-sm-1 col-md-2"></div>
                     <div class="col-xs-12 col-sm-10 col-lg-8 text-center">
                         <h2 class="text-uppercase">Why choose <span class="color_red">EduCare</span></h2>
@@ -222,9 +206,10 @@
                     </div>
                     <div class="col-sm-1 col-lg-2"></div>
                 </div>
-                <div class="row">
+                <div class="row w-100">
                     <div class="col-sm-5">
-                        <div class="features-img"> <img src="./main-feature.png" alt=""> </div>
+                        <div class="features-img"> <img src="{{ asset('assets/images/main-feature.png') }}"
+                                alt=""> </div>
                     </div>
                     <div class="col-sm-7">
                         <div class="media service-box">
@@ -263,4 +248,4 @@
                 </div>
             </div>
         </section>
-@endsection
+    @endsection

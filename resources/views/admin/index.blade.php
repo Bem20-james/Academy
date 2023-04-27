@@ -74,7 +74,7 @@
             <div class="small-box bg-info">
               <div class="inner">
                 <h3>25</h3>
-                <p>Instructors</p>
+                <p>Teachers</p>
               </div>
               <div class="icon">
                 <i class="fas fa-users"></i>

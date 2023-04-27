@@ -18,7 +18,7 @@ Route::group(['namespace' => 'admin', 'prefix' => 'admin', 'middleware' => 'admi
 });
 
 //TEACHERS
-Route::group(['namespace' => 'admin', 'prefix' => 'admin/instructor', 'middleware' => 'admin'], function(){
+Route::group(['namespace' => 'admin', 'prefix' => 'admin', 'middleware' => 'admin'], function(){
     Route::get('/view', 'TeachersController@view')->name('view_instructors');
     Route::get('/add', 'TeachersController@create')->name('add_instructor');
     Route::post('/store', 'TeachersController@store')->name('store_instructor');
@@ -26,10 +26,10 @@ Route::group(['namespace' => 'admin', 'prefix' => 'admin/instructor', 'middlewar
 });
 
 //STUDENTS
-Route::group(['namespace' => 'admin', 'prefix' => 'admin/instructor', 'middleware' => 'admin'], function(){
-    Route::get('/view', 'StudentsController@view')->name('view_students');
+// Route::group(['namespace' => 'admin', 'prefix' => 'admin/instructor', 'middleware' => 'admin'], function(){
+//     Route::get('/view', 'StudentsController@view')->name('view_students');
 
-});
+// });
 
 // SETTINGS
 Route::group(['namespace' => 'admin', 'prefix' => 'admin/instructor', 'middleware' => 'admin'], function(){

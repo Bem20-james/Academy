@@ -40,8 +40,8 @@ class TeachersController extends Controller
             'status' => $request->status,
             'password' => Hash::make($password),
         ]);
-        $notification = "You have successfully ADDED a Teacher";
-        return redirect()->route('view_instructors')->with('notification', $notification);
+        $notification = "You have successfully added a Teacher";
+        return redirect()->route('admin.dashboard')->with('notification', $notification);
     }
 
     public function view(){

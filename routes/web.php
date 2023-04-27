@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::group(['namespace' => 'web', 'prefix' => 'web', 'middleware' => 'web'], function (){
+Route::group(['namespace' => 'web', 'prefix' => 'web', 'middleware' => 'auth'], function (){
     Route::get('/', 'HomeController@index')->name('index');
     Route::get('/about_us', 'HomeController@about')->name('about_us');
 });
 
-Route::group(['namespace' => 'auth', 'prefix' => 'auth', 'middleware' => 'auth'], function (){
+Route::group(['namespace' => 'auth', 'prefix' => 'auth', 'middleware' => 'web'], function (){
     Route::get('/login', 'AuthController@login')->name('login');
     Route::get('/register', 'AuthController@register')->name('register');
     Route::get('/register_teachers', 'AuthController@registerTeach')->name('register_teachers');

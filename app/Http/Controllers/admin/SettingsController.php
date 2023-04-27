@@ -7,19 +7,19 @@ use Illuminate\Http\Request;
 
 class SettingsController extends Controller
 {
-    public function view(){
-        return view('admin.pages.settings.settings_view');
-    }
+    // public function view(){
+    //     return view('admin.pages.settings.settings_view');
+    // }
 
-    public function create(){
-        return view('admin.pages.settings.settings_create');
-    }
+    // public function create(){
+    //     return view('admin.pages.settings.settings_create');
+    // }
 
-    public function edit(){
-        return view('admin.pages.settings.settings_edit');
-    }
+    // public function edit(){
+    //     return view('admin.pages.settings.settings_edit');
+    // }
 
-    public function store(){
-        return view('admin.pages.set');
-    }
+    // public function store(){
+    //     return view('admin.pages.set');
+    // }
 }

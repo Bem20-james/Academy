@@ -1,5 +1,8 @@
 /* css code for header and footer */
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .top-head {
     background-color: whitesmoke;
     margin: 0%;
@@ -101,7 +104,10 @@ i a {
 
 
 /* css code for the index */
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .images {
     height: 75vh;
     width: 100%;
@@ -110,6 +116,7 @@ i a {
     object-position: center;
     background: black;
 }
+<<<<<<< Updated upstream
 /* .carousel-caption{
 
 .carousel-caption {
@@ -117,6 +124,8 @@ i a {
     padding-bottom: 300px;
     color: rgb(183, 164, 164);
 } */
+=======
+>>>>>>> Stashed changes
 
 .image {
     position: relative;
@@ -126,6 +135,31 @@ i a {
     background-position: center;
 }
 
+<<<<<<< Updated upstream
+=======
+.image-text{
+    position: absolute;
+    z-index: 100;
+    top: 2200px;
+    left: 60px;
+    color:rgb(10, 10, 58);
+    font-size: larger;
+    font-weight: bold;
+}
+
+.outline{
+    padding: 12px;
+    border-left:#06bf56;
+    height: 200px;
+    width: 200px;
+
+}
+
+.owl-three{
+    background: #fff;
+}
+
+>>>>>>> Stashed changes
 .slider img {
     width: auto;
     height: 70vh;
@@ -138,6 +172,14 @@ i a {
     font-weight: bold;
 }
 
+<<<<<<< Updated upstream
+=======
+/* .row {
+    margin-top: 20px;
+    cursor: pointer;
+} */
+
+>>>>>>> Stashed changes
 .border-inner {
     margin: 12px;
 }
@@ -154,9 +196,18 @@ i a {
     border-width: 100px;
     border-spacing: 200px;
 }
+<<<<<<< Updated upstream
 
 /* .carousel-content {
     position:absolute;
+=======
+.caption{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+
+>>>>>>> Stashed changes
 .carousel-content {
     position: absolute;
     bottom: 50%;
@@ -164,6 +215,7 @@ i a {
     z-index: 20;
     color: rgb(215, 189, 189);
     text-shadow: rgb(60, 142, 60);
+<<<<<<< Updated upstream
   } */
   .courses{
       height: 400px;
@@ -217,6 +269,17 @@ i a {
   .h1{
     font-size: 8cqh;
   }
+=======
+}
+
+.carol-text{
+    font: 1em sans-serif;
+}
+
+.peter{
+    background: rgb(216, 208, 208);
+}
+>>>>>>> Stashed changes
 
 
 .courses {
@@ -251,12 +314,19 @@ i a {
     display: flex;
 }
 
+<<<<<<< Updated upstream
 
 /* end of index css */
 
 
 /* ======== Css for login and registration ========= */
 
+=======
+/* end of index css */
+
+/* ======== Css for login and registration ========= */
+
+>>>>>>> Stashed changes
 .text {
     color: #151F4F;
 }
@@ -281,6 +351,7 @@ i a {
     background-size: cover;
     background-position: center;
 }
+<<<<<<< Updated upstream
 
  .wrapper{
      width: 100%;
@@ -293,6 +364,8 @@ i a {
      background-size: cover;
      background-image: asset ('assets/images/main-feature') ;
  }
+=======
+>>>>>>> Stashed changes
 
 .wrapper {
     width: 100%;
@@ -384,9 +457,13 @@ form .button input:hover {
     text-decoration: underline;
 }
 
+<<<<<<< Updated upstream
 
 /* adding padding to container */
 
+=======
+/* adding padding to container */
+>>>>>>> Stashed changes
 .container-2 {
     justify-content: center;
     width: 50%;
@@ -408,6 +485,7 @@ form .button input:hover {
     position: absolute;
     opacity: 0.7;
     top: 250px;
+<<<<<<< Updated upstream
  }
 
 
@@ -452,13 +530,36 @@ form .button input:hover {
 
 /* text color to link */
 
+=======
+}
+
+/* input fields width */
+.combined-2 {
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    border: none;
+    text-emphasis: none;
+    color: rgb(8, 8, 67)
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* text color to link */
+>>>>>>> Stashed changes
 a {
     color: dodgerblue;
 }
 
+<<<<<<< Updated upstream
 
 /* sigin section */
 
+=======
+/* sigin section */
+>>>>>>> Stashed changes
 .signin {
     background-color: #f1f1f1;
     justify-content: center;
@@ -478,5 +579,8 @@ a {
     color: rgb(8, 8, 67)
 }
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 /* =====End of Css for Registration========== */

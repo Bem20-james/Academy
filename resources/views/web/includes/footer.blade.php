@@ -96,8 +96,17 @@
 
 
 <script src="{{ asset('assets/plugin/fa-6-web/js/all.js') }}"></script>
+<<<<<<< Updated upstream
 <script src="{{ asset('assets/plugin/jquery2/main.js') }}"></script>
 <script src="{{ asset('assets/plugin/jquery2/jquery-3.2.1.min.js') }}"></script>
 <script src="{{ asset('assets/plugin/jquery2/bootstrap.min.js') }}"></script>
 </body>
+=======
+
+<script src="{{ asset('assets/plugin/jquery/jquery-3.2.1.min.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('assets/owl-carousel/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('assets/owl-carousel/owl_javascript.js') }}"></script>
+
+>>>>>>> Stashed changes
 </html>

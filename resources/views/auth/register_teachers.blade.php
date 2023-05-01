@@ -38,6 +38,7 @@
                         <input type="text" placeholder="Last Name" class="form-control" name="last_name" required>
 
                         <input type="hidden" name="role" value="3">
+                        <input type="hidden" name="status" value="1">
 
                     </div>
                     <div class="form-group">

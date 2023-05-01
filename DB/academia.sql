@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 28, 2023 at 01:16 AM
+-- Generation Time: May 01, 2023 at 11:02 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -140,10 +140,10 @@ CREATE TABLE `users` (
   `lastname` varchar(225) COLLATE utf8mb4_unicode_ci NOT NULL,
   `role` int(255) NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `gender` varchar(225) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
-  `department` varchar(225) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `status` int(11) NOT NULL,
+  `department` varchar(225) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` int(1) NOT NULL,
+  `gender` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -154,10 +154,8 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `firstname`, `lastname`, `role`, `email`, `gender`, `email_verified_at`, `department`, `status`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(9, 'Aza', 'Philip', 4, 'jimeawua@gmail.com', '', NULL, '', 0, '$2y$10$XyRm2.kcqsmdnguwROSOV.MvbOFUW/A1527Nq11Ol0.zZO.Oi.wlS', NULL, '2023-04-24 14:03:00', '2023-04-24 14:03:00'),
-(12, 'Tersor', 'Agba', 3, 'tersoragba@gmail.com', '', NULL, '', 0, '$2y$10$ocVIt/zpAJnW1gzGiJtCA.N92XB2tc4mlLlIy0CJVynrgDA5l2cYO', NULL, '2023-04-24 14:13:56', '2023-04-24 14:13:56'),
-(15, 'Academia', 'Academic', 1, 'academia@gmail.com', '', NULL, '', 0, '123456', NULL, NULL, NULL);
+INSERT INTO `users` (`id`, `firstname`, `lastname`, `role`, `email`, `email_verified_at`, `department`, `status`, `gender`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'Admin', 'Academy', 1, 'adminacademy@gmail.com', NULL, NULL, 1, 'male', '$2y$10$xYOvBS4sjEV3Oe.LnzBxhud8T9eYpvkUuP2hoBboU7OOs22xV/BYW', NULL, '2023-04-28 17:43:56', '2023-04-28 17:43:56');
 
 --
 -- Indexes for dumped tables
@@ -235,7 +233,7 @@ ALTER TABLE `settings`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

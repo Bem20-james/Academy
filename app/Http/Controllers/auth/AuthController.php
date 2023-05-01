@@ -26,9 +26,11 @@ class AuthController extends Controller
         $this->validate($request, [
             'first_name' => 'required | max:100',
             'last_name' => 'required | max:100',
-            'gender' => 'required | max:6',
+            'gender' => 'required',
             'email' => 'required | email | max:100 | unique:users',
             'password' => 'required| max:20',
+            'status' => 'required',
+            'role' => 'required',
         ]);
 
         User::create([
@@ -36,6 +38,7 @@ class AuthController extends Controller
             'lastname' => $request->last_name,
             'gender' => $request->gender,
             'role' => $request->role,
+            'status' => $request->status,
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
@@ -53,9 +56,9 @@ class AuthController extends Controller
 
         if (Auth::attempt($data)) {
             if (auth()->user()->role == 4){
-                return redirect()->route('index');
+                return redirect()->route('students.dashboard');
             } elseif (auth()->user()->role == 3) {
-                return redirect()->route('admin.dashboard');
+                return redirect()->route('teacher.dashboard');
             } elseif (auth()->user()->role == 1 | auth()->user()->role == 2) {
                 return redirect()->route('admin.dashboard');
             }

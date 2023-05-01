@@ -22,14 +22,14 @@ Route::group(['namespace' => 'admin', 'prefix' => 'admin', 'middleware' => 'admi
     Route::get('/view', 'TeachersController@view')->name('view_instructors');
     Route::get('/add', 'TeachersController@create')->name('add_instructor');
     Route::post('/store', 'TeachersController@store')->name('store_instructor');
-
 });
 
 //STUDENTS
-// Route::group(['namespace' => 'admin', 'prefix' => 'admin/instructor', 'middleware' => 'admin'], function(){
-//     Route::get('/view', 'StudentsController@view')->name('view_students');
-
-// });
+Route::group(['namespace' => 'admin', 'prefix' => 'admin', 'middleware' => 'admin'], function(){
+    Route::get('/view_students', 'StudentsController@view')->name('view_students');
+    Route::get('/add_student', 'StudentsController@create')->name('add_student');
+    Route::post('/store_student', 'StudentsController@store')->name('store_student');
+});
 
 // SETTINGS
 Route::group(['namespace' => 'admin', 'prefix' => 'admin/instructor', 'middleware' => 'admin'], function(){

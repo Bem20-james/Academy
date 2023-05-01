@@ -22,6 +22,7 @@
         <!-- Main content -->
         <section class="content">
             <div class="my-5 ml-3">
+
                 <a href="{{ route('add_instructor') }}" class="btn btn-success shadow-lg">Add Instructor</a>
             </div>
 
@@ -29,22 +30,21 @@
             <div class="card">
                 <div class="card-header">
 
-                <div class="card-body p-0">
-                    <table class="table m-0">
-                        <thead>
-                            <tr>
-                                <th>Instructor ID</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Subject</th>
-                                <th>Email</th>
-                                <th>status</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {{-- @if ( $instructors->count() > 0)
-                                @foreach ( $instructors as $instructor)
+                    <div class="card-body p-0">
+                        <table class="table m-0">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Profile</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{-- @if ($instructors->count() > 0)
+                                @foreach ($instructors as $instructor)
                                     <tr>
                                         <td>{{ $instructor->id }}</td>
                                         <td>{{ $instructor->first_name }}</td>
@@ -68,26 +68,25 @@
                             @else
                                 <tr> <th colspan="10" class="text-center"> No Admins </th> </tr>
                             @endif --}}
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Elder</td>
-                                <td>Jacob</td>
-                                <td>Computer Science</td>
-                                <td>jacob@gmail.com</td>
-                                <td>ACTIVE</td>
-                                <td>
-                                    <span class="btn btn-success p-2">
-                                        Mail
-                                        <i class="fab fa-telegram-plane text-white"></i>
-                                    </span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><img src="{{ asset('assets/images/jacob.jpg')}}" alt="" style="height: 76px"></td>
+                                    <td>Elder</td>
+                                    <td>Jacob</td>
+                                    <td>1</td>
+                                    <td><span class="btn btn-success p-2">
+                                            View
+                                            <i class="fab fa-eye text-white"></i>
+                                        </span>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
                 </div>
-                <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
+                <!-- /.card -->
 
         </section>
         <!-- /.content -->

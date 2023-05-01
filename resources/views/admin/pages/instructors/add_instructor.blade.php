@@ -1,6 +1,5 @@
 @extends('admin.layouts.Admin')
 @section('admin_contents')
-
     <!-- Content Wrapper. Contains page content -->
     <div class="">
         <section class="content-header bg-dark pinned-2">
@@ -20,7 +19,7 @@
             </div>
         </section>
         <div class="my-5 ml-3">
-            <a href="{{ route('view_instructor') }}" class="btn btn-success shadow-lg">View Instructor</a>
+            <a href="{{ route('view_instructors') }}" class="btn btn-success shadow-lg">View Instructor</a>
         </div>
 
         <!-- Main content -->
@@ -43,11 +42,14 @@
                                 </div>
                             </div>
                         </div> --}}
+
                         <form class="px-4 mb-4" action="{{ route('store_instructor') }}" method="POST">
                             @csrf
                             <div class="form-row">
                                 <div class="form-group col-md-12">
-                                    <label for="course_name">Instructor FirstName</label>
+                                    <label for="first_name">
+                                        <i class="fas fa-user"></i>
+                                        Instructor FirstName</label>
                                     <input type="text" class="form-control" name="first_name" placeholder="FirstName"
                                         max="400">
                                 </div>
@@ -55,44 +57,75 @@
 
                             <div class="form-row">
                                 <div class="form-group col-md-12">
-                                    <label for="course_name">Instructor LastName</label>
+                                    <label for="last_name">
+                                        <i class="fas fa-user"></i>
+                                        Instructor LastName</label>
                                     <input type="text" class="form-control" name="last_name" placeholder="LastName"
                                         max="400">
                                 </div>
                             </div>
-
                             <div class="form-row">
                                 <div class="form-group col-md-12">
-                                    <label for="course_name">Instructor Email</label>
-                                    <input type="text" class="form-control" name="email" placeholder="Email"
-                                        max="400">
-                                </div>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group col-md-12">
-                                    <label for="course_name">Instructor Gender</label>
-                                    <input type="text" class="form-control" name="gender" placeholder="Gender"
-                                        max="400">
-                                </div>
-                            </div>
-
-                            <input type="hidden" name="role" value="3">
-                            {{-- <div class="form-row">
-                                <div class="form-group col-md-12">
-                                    <label for="course_name">Role</label>
-                                    <input type="text" class="form-control" name="role" placeholder="Role"
-                                        max="400">
-                                </div>
-                            </div> --}}
-
-                            <div class="form-row">
-                                <div class="form-group col-md-12">
-                                    <label for="course_name">Department</label>
+                                    <label for="department">
+                                        <i class="fas fa-list"></i>
+                                        Department</label>
                                     <input type="text" class="form-control" name="department" placeholder="Department"
                                         max="400">
                                 </div>
                             </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="subject">
+                                        <i class="fas fa-book"></i>
+                                        Subject</label>
+                                    <input type="text" class="form-control" name="subject" placeholder="Department"
+                                        max="400">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="class">
+                                        <i class="fas fa-home"></i>
+                                        Class</label>
+                                    <input type="text" class="form-control" name="class" placeholder="Department"
+                                        max="400">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="phone">
+                                        <i class="fas fa-phone"></i>
+                                        Phone</label>
+                                    <input type="text" class="form-control" name="phone" placeholder="Department"
+                                        max="400">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="email">
+                                        <i class="fas fa-envelope"></i>
+                                        <b>Instructor Email</b>
+                                    </label>
+                                    <input type="text" class="form-control" name="email" placeholder="Email"
+                                    max="400">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="Gender">
+                                        <i class="fas fa-users"></i>
+                                        <b>Gender</b>
+                                    </label>
+                                    <select id="" class="form-control" name="gender">
+                                        <option selected value="">choose gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                   </select>
+                                </div>
+                            </div>
+
+                            <input type="hidden" name="role" value="3">
 
                             <input class="form-check-input" type="hidden" name="status" value="1">
                             {{-- <div class="form-group col-md-12">

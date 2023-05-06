@@ -1,3 +1,12 @@
+/* styles for courses */
+.courses{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:bold ;
+}
+
+/* css code for header and footer */
+
+
 /* css code for header and footer */
 
 .top-head {
@@ -110,6 +119,7 @@ i a {
     object-position: center;
     background: black;
 }
+
 /* .carousel-caption{
 
 .carousel-caption {
@@ -117,6 +127,7 @@ i a {
     padding-bottom: 300px;
     color: rgb(183, 164, 164);
 } */
+
 
 .image {
     position: relative;
@@ -126,6 +137,30 @@ i a {
     background-position: center;
 }
 
+
+.image-text{
+    position: absolute;
+    z-index: 100;
+    top: 2200px;
+    left: 60px;
+    color:rgb(10, 10, 58);
+    font-size: larger;
+    font-weight: bold;
+}
+
+.outline{
+    padding: 12px;
+    border-left:#06bf56;
+    height: 200px;
+    width: 200px;
+
+}
+
+.owl-three{
+    background: #fff;
+}
+
+
 .slider img {
     width: auto;
     height: 70vh;
@@ -134,9 +169,16 @@ i a {
 .text-center {
     text-align: center;
     font-size: medium;
-    font-style: italic;
+    font-style:normal;
     font-weight: bold;
 }
+
+
+/* .row {
+    margin-top: 20px;
+    cursor: pointer;
+} */
+
 
 .border-inner {
     margin: 12px;
@@ -157,6 +199,14 @@ i a {
 
 /* .carousel-content {
     position:absolute;
+=======
+.caption{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+
+
 .carousel-content {
     position: absolute;
     bottom: 50%;
@@ -164,6 +214,7 @@ i a {
     z-index: 20;
     color: rgb(215, 189, 189);
     text-shadow: rgb(60, 142, 60);
+
   } */
   .courses{
       height: 400px;
@@ -207,9 +258,18 @@ i a {
   .centered {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 80%;
     transform: translate(-50%, -50%);
     text-align:  center;
+    font-family: Cambria;
+  }
+  .contact {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-family: Cambria;
+    font-size: xx-larges;
   }
   .h3{
     font-size: x-large;
@@ -218,6 +278,14 @@ i a {
     font-size: 8cqh;
   }
 
+
+.carol-text{
+    font: 1em sans-serif;
+}
+
+.peter{
+    background: rgb(216, 208, 208);
+}
 
 .courses {
     height: 400px;
@@ -257,6 +325,10 @@ i a {
 
 /* ======== Css for login and registration ========= */
 
+/* end of index css */
+
+/* ======== Css for login and registration ========= */
+
 .text {
     color: #151F4F;
 }
@@ -272,6 +344,7 @@ i a {
     width: 100%;
     background-size: cover;
     background-position: center;
+
 }
 
 .bg-wrap-2 {
@@ -281,6 +354,7 @@ i a {
     background-size: cover;
     background-position: center;
 }
+
 
  .wrapper{
      width: 100%;
@@ -384,9 +458,7 @@ form .button input:hover {
     text-decoration: underline;
 }
 
-
 /* adding padding to container */
-
 .container-2 {
     justify-content: center;
     width: 50%;
@@ -408,9 +480,7 @@ form .button input:hover {
     position: absolute;
     opacity: 0.7;
     top: 250px;
- }
-
-
+}
 
 /* input fields width */
 
@@ -418,7 +488,7 @@ form .button input:hover {
    .signin{
       background-color: #f1f1f1;
       justify-content: center;
-      color: rgb(8, 8, 67)
+      color: rgb(8, 8, 67);
   }
 
   .exist-account{
@@ -449,6 +519,19 @@ form .button input:hover {
     opacity: 1;
 }
 
+/* input fields width */
+.combined-2 {
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    border: none;
+    text-emphasis: none;
+    color: rgb(8, 8, 67)
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
 
 /* text color to link */
 
@@ -479,4 +562,66 @@ a {
 }
 
 
+
+
+
 /* =====End of Css for Registration========== */
+
+
+/* COntacts */
+.contacts{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(5, 5, 43);
+
+}
+
+.form-bckg{
+    background-color: rgba(72, 3, 23, 0.626);
+}
+
+.main-office{
+    margin-top: 90px;
+}
+
+/* BLOGS */
+.first-img{
+    object-fit: cover;
+    background-image: black;
+    opacity: black 0.15;
+    transition: 015s, color 0.15s;
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+.HEADING{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+
+}
+.hr1{
+    width: 20%;
+}
+.hr2{
+    width: 10%;
+}
+.hr3{
+    width: 5%;
+}
+
+.Readmore{
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+/* CONTACT INFORMATION */
+
+.contact-info{
+    margin-top: 80px;
+    margin-left: 80px;
+}
+.text-image{
+    position: absolute;
+}

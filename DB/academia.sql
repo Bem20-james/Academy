@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 28, 2023 at 01:16 AM
+-- Generation Time: May 01, 2023 at 11:02 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -38,6 +38,231 @@ CREATE TABLE `failed_jobs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 06, 2023 at 10:31 PM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 8.1.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `academia`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `blogs`
+--
+
+CREATE TABLE `blogs` (
+  `id` int(255) NOT NULL,
+  `blogcategory` varchar(255) NOT NULL,
+  `title` varchar(500) NOT NULL,
+  `description` text NOT NULL,
+  `image` varchar(1000) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `blogs`
+--
+
+INSERT INTO `blogs` (`id`, `blogcategory`, `title`, `description`, `image`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'PHP', 'PHP RAW', 'php is an advanced language that is good  it is basically the language that deal with making things work', 'web/images/blog/PHP RAW1683206628.jpg', '2023-05-04 12:23:48', '2023-05-04 12:23:48', NULL),
+(2, 'Announcements', 'Emergency', 'There are suspicions all over the school compound two men has just stolen the principal\'s crucial documents be on alert and let everybody be vigilant.', 'web/images/blog/Emergency1683206826.jpg', '2023-05-04 12:27:06', '2023-05-04 12:27:06', NULL),
+(3, 'Laravel', 'Laravel Projects', 'laravel is an advance of php it is highly secured as such , if you use laravel in developing websites you would find out that your websites cannot be easily hacked.', 'web/images/blog/Laravel Projects1683206957.jpg', '2023-05-04 12:29:17', '2023-05-04 12:29:17', NULL),
+(4, 'Food', 'Agriculture \'s essentiality', 'Agriculture\'s essentiality in the society you will found out that most of the richest people in foreign  countries are Agricultural farmers who have ventured nothing less  but have given all their time into developing and promogating agriculture.', 'web/images/blog/Agriculture \'s essentiality1683207140.png', '2023-05-04 12:32:21', '2023-05-04 12:32:21', NULL),
+(5, 'Football', 'Soccer\'s importance', 'football is a very good game that is common around us it is easy swift but rich. every school needs a football pitch you cannot do without  football.', 'web/images/blog/Soccer\'s importance1683207544.jpg', '2023-05-04 12:39:04', '2023-05-04 12:39:04', NULL),
+(6, 'Announcements', 'Elon musk', 'The richest man on earth Elon musk set to visit our school today every student should be informed and all student should compose themselves.', 'web/images/blog/Elon musk1683207842.jpg', '2023-05-04 12:44:02', '2023-05-04 12:44:02', NULL);
+
+--
+-- Indexes for dumped tables
+--
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 06, 2023 at 10:35 PM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 8.1.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `academia`
+--
+
+-- --------------------------------------------------------
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 06, 2023 at 10:36 PM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 8.1.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `academia`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `review`
+--
+
+CREATE TABLE `review` (
+  `id` int(11) NOT NULL,
+  `blog_id` int(255) NOT NULL,
+  `full_name` varchar(100) NOT NULL,
+  `review_img` varchar(1000) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `content` varchar(400) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `review`
+--
+
+INSERT INTO `review` (`id`, `blog_id`, `full_name`, `review_img`, `email`, `content`, `created_at`, `updated_at`) VALUES
+(1, 1, 'Kingsley Terwase', 'web/images/blog/1683291697.jpg', 'kingsleyTerwase@gmail.com', 'This is my best programming language and i really enjoy it so much enjoy it', '2023-05-05 12:01:37', '2023-05-05 12:01:37'),
+(2, 2, 'kingsley Terwase', 'web/images/blog/1683293436.jpg', 'kingsley@gmail.com', 'This is a good work keep up the spirit dont go away from it this is flabbergesting', '2023-05-05 12:30:36', '2023-05-05 12:30:36'),
+(3, 2, 'Jacob Haaga', 'web/images/blog/1683322708.png', 'jacobhaaga@gmail.com', 'we are happy to receive you sir we are greatful for your generousity we love you so much we thankyou', '2023-05-05 20:38:28', '2023-05-05 20:38:28');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `review`
+--
+ALTER TABLE `review`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `review`
+--
+ALTER TABLE `review`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+--
+-- Table structure for table `blog_cat`
+--
+
+CREATE TABLE `blog_cat` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `image` varchar(200) NOT NULL,
+  `description` text NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `blog_cat`
+--
+
+INSERT INTO `blog_cat` (`id`, `name`, `image`, `description`, `created_at`, `updated_at`) VALUES
+(1, 'Announcements', 'web/images/blog/1682793550.jpg', 'The founder of WafflePro is coming to our school.', '2023-04-29 13:52:09', '2023-04-29 17:39:10'),
+(5, 'Food', 'web/images/blog/1682930098.jpg', 'Agriculture food is essential  now', '2023-04-30 10:53:02', '2023-05-01 07:34:58'),
+(6, 'Laravel', 'web/images/blog/1682945360.png', 'Laravel is an upgrade of php it is very good and more well secured compare to raw PHP as a programmer you are looking for a better programming language just take laravel', '2023-05-01 11:49:20', '2023-05-01 11:49:20'),
+(7, 'PHP', 'web/images/blog/1683206331.jpg', 'This is an advance and the best programming language', '2023-05-04 12:18:51', '2023-05-04 12:18:51'),
+(8, 'Football', 'web/images/blog/1683207272.jpg', 'soccer popularly known as football is the richest and most common game on planet earth.', '2023-05-04 12:34:32', '2023-05-04 12:34:32'),
+(9, 'Announcements', 'web/images/blog/1683207717.jpg', 'Elon musk is visiting our school today', '2023-05-04 12:41:58', '2023-05-04 12:41:58');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `blog_cat`
+--
+ALTER TABLE `blog_cat`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `blog_cat`
+--
+ALTER TABLE `blog_cat`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+--
+-- Indexes for table `blogs`
+--
+ALTER TABLE `blogs`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `blogs`
+--
+ALTER TABLE `blogs`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
 
 --
 -- Table structure for table `migrations`
@@ -140,10 +365,10 @@ CREATE TABLE `users` (
   `lastname` varchar(225) COLLATE utf8mb4_unicode_ci NOT NULL,
   `role` int(255) NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `gender` varchar(225) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
-  `department` varchar(225) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `status` int(11) NOT NULL,
+  `department` varchar(225) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` int(1) NOT NULL,
+  `gender` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -154,10 +379,8 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `firstname`, `lastname`, `role`, `email`, `gender`, `email_verified_at`, `department`, `status`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(9, 'Aza', 'Philip', 4, 'jimeawua@gmail.com', '', NULL, '', 0, '$2y$10$XyRm2.kcqsmdnguwROSOV.MvbOFUW/A1527Nq11Ol0.zZO.Oi.wlS', NULL, '2023-04-24 14:03:00', '2023-04-24 14:03:00'),
-(12, 'Tersor', 'Agba', 3, 'tersoragba@gmail.com', '', NULL, '', 0, '$2y$10$ocVIt/zpAJnW1gzGiJtCA.N92XB2tc4mlLlIy0CJVynrgDA5l2cYO', NULL, '2023-04-24 14:13:56', '2023-04-24 14:13:56'),
-(15, 'Academia', 'Academic', 1, 'academia@gmail.com', '', NULL, '', 0, '123456', NULL, NULL, NULL);
+INSERT INTO `users` (`id`, `firstname`, `lastname`, `role`, `email`, `email_verified_at`, `department`, `status`, `gender`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'Admin', 'Academy', 1, 'adminacademy@gmail.com', NULL, NULL, 1, 'male', '$2y$10$xYOvBS4sjEV3Oe.LnzBxhud8T9eYpvkUuP2hoBboU7OOs22xV/BYW', NULL, '2023-04-28 17:43:56', '2023-04-28 17:43:56');
 
 --
 -- Indexes for dumped tables
@@ -235,7 +458,7 @@ ALTER TABLE `settings`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

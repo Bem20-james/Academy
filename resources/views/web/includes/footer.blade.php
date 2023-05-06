@@ -19,24 +19,23 @@
                         <div class="row">
                             <div class="col-lg-6 col-sm-6 col-xs-6">
                                 <ul class="list-unstyled">
-                                    <li><i class="fa fa-angle-right text-success mr-2"></i><a href="#">Home</a>
+                                    <li><i class="fa fa-angle-right text-success mr-2"></i><a href="{{ route('index') }}">Home</a>
                                     </li>
-                                    <li><i class="fa fa-angle-right text-success mr-2"></i><a href="#">About
+                                    <li><i class="fa fa-angle-right text-success mr-2"></i><a href="{{ route('about_us') }}">About
                                             Us</a>
                                     </li>
-                                    <li><i class="fa fa-angle-right text-success mr-2"></i><a href="#">Courses</a>
+                                    <li><i class="fa fa-angle-right text-success mr-2"></i><a href="">Courses</a>
                                     </li>
-                                    <li><i class="fa fa-angle-right text-success mr-2"></i><a href="#">Contact</a>
+                                    <li><i class="fa fa-angle-right text-success mr-2"></i><a href="{{ route('contact') }}">Contact</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="col-lg-6 col-sm-6 col-xs-6">
                                 <ul class="list-unstyled">
-                                    <li><i class="fa fa-angle-right text-success mr-2"></i><a href="#">Blog</a>
+                                    <li><i class="fa fa-angle-right text-success mr-2"></i><a href="">Blog</a>
                                     </li>
-                                    <li><i class="fa fa-angle-right text-success mr-2"></i><a href="#">Gallery</a>
-                                    </li>
-                                    <li><i class="fa fa-angle-right text-success mr-2"></i><a href="#">Login</a>
+                                    <li><i class="fa fa-angle-right text-success mr-2"></i><a href="">Gallery</a></li>
+                                    <li><i class="fa fa-angle-right text-success mr-2"></i></i><a href="{{ route('login') }}">Login</a>
                                     </li>
                                 </ul>
                             </div>
@@ -96,8 +95,17 @@
 
 
 <script src="{{ asset('assets/plugin/fa-6-web/js/all.js') }}"></script>
+<<<<<<< Updated upstream
 <script src="{{ asset('assets/plugin/jquery2/main.js') }}"></script>
 <script src="{{ asset('assets/plugin/jquery2/jquery-3.2.1.min.js') }}"></script>
 <script src="{{ asset('assets/plugin/jquery2/bootstrap.min.js') }}"></script>
 </body>
+=======
+
+<script src="{{ asset('assets/plugin/jquery/jquery-3.2.1.min.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('assets/owl-carousel/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('assets/owl-carousel/owl_javascript.js') }}"></script>
+
+>>>>>>> Stashed changes
 </html>

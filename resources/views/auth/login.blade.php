@@ -1,6 +1,6 @@
 @extends('web.layout.layouts')
 @section('content')
-<div class="row">
+<div class="row w-100">
     <img class="bg-wrap"  src="{{ asset('assets/images/b3.jpg') }}" alt="">
 </div>
 <div class="container">

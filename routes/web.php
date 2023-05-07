@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 // Home controller
 
-Route::group(['namespace' => 'web', 'prefix' => 'blog', 'middleware' => 'auth'], function () {
+Route::group(['namespace' => 'web', 'prefix' => 'blog'], function () {
     Route::get('/view/{blogcategory}/{id}', 'HomeController@blogcatposts')->name('blogcat.post');
     Route::get('/view/post/{title}/{blogcategory}/{id}', 'HomeController@posts')->name('view.post');
     Route::post('store', 'HomeController@store')->name('review.store');
@@ -24,7 +24,7 @@ Route::group(['namespace' => 'web', 'prefix' => 'blog', 'middleware' => 'auth'],
 
 
 
-Route::group(['namespace' => 'web', 'prefix' => 'web', 'middleware' => 'auth'], function () {
+Route::group(['namespace' => 'web'], function () {
     Route::get('/', 'HomeController@index')->name('index');
     Route::get('/about_us', 'HomeController@about')->name('about_us');
     Route::get('/Contact', 'HomeController@contact')->name('contact');

@@ -37,13 +37,13 @@
             </button>
             <ul class="navbar-nav justify ml-auto homepage-links">
                 <li class="nav-item active p-0 m-0">
-                    <a class="nav-link text-white p-4 mx-2 h-100" href="#">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-white p-4 mx-2 h-100" href="{{ route('web.index') }}">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white p-4 mx-2" href="#">About Us</a>
+                    <a class="nav-link text-white p-4 mx-2" href="about_us">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white p-4 mx-2" href="#">Courses</a>
+                    <a class="nav-link text-white p-4 mx-2" href="courses">Courses</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white p-4 mx-2" href="#">Contact</a>

@@ -60,7 +60,7 @@ class AuthController extends Controller
             } elseif (auth()->user()->role == 3) {
                 return redirect()->route('teacher.dashboard');
             } elseif (auth()->user()->role == 1 | auth()->user()->role == 2) {
-                return redirect()->route('admin.dashboard');
+                return redirect()->route('index');
             }
         } else {
             $notification = "Incorrect Login Details: Check and try again!";

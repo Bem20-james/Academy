@@ -58,7 +58,6 @@
             </div>
         </div>
     </div>
-<<<<<<< Updated upstream
 
     {{-- some important facts --}}
     <div class="bg-light py-5 w-100">
@@ -216,7 +215,6 @@
                         </div>
                     </div>
                 </div>
-=======
     </section>
 
     <!-- Get Stated Now -->
@@ -241,7 +239,6 @@
                             NOW</button>
                     </li>
                 </ul>
->>>>>>> Stashed changes
             </div>
         </div>
     </div>

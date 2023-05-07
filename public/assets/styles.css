@@ -120,13 +120,11 @@ i a {
     background: black;
 }
 
-/* .carousel-caption{
-
 .carousel-caption {
     text-align: center;
     padding-bottom: 300px;
     color: rgb(183, 164, 164);
-} */
+}
 
 
 .image {
@@ -141,7 +139,7 @@ i a {
 .image-text{
     position: absolute;
     z-index: 100;
-    top: 2200px;
+    top: 2300px;
     left: 60px;
     color:rgb(10, 10, 58);
     font-size: larger;
@@ -196,13 +194,11 @@ i a {
     border-spacing: 200px;
 }
 
-/* .carousel-content {
-    position:absolute;
-=======
 .caption{
     position: absolute;
     top: 50%;
-    left: 35%;
+    left: 25%;
+    right: 25%;
 }
 
 
@@ -213,8 +209,10 @@ i a {
     z-index: 20;
     color: rgb(215, 189, 189);
     text-shadow: rgb(60, 142, 60);
-
-  } */
+  }
+  .caruselz{
+      opacity: 0.7;
+  }
   .courses{
       height: 400px;
       width: 100%;
@@ -270,7 +268,16 @@ i a {
 
 
 .carol-text{
-    font: 1em sans-serif;
+     font: 1em sans-serif;
+}
+.write-up{
+    text-align: center;
+}
+.students-img{
+    display: flex;
+    justify-content: center;
+    image-resolution: 180;
+    margin-bottom: 20px;
 }
 
 .peter{
@@ -281,11 +288,26 @@ i a {
     height: 400px;
     width: 100%;
 }
-
+.writings{
+    text-align: center;
+    display: block;
+     margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
 .from-the-best {
     background-color: whitesmoke;
     width: auto;
     height: 15%;
+}
+
+.icon{
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 20px;
+    position: relative;
+    transform:rotate(-45deg);
+    align-items: center;
 }
 
 .container-4 {

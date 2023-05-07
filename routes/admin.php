@@ -60,3 +60,33 @@ Route::group(['namespace' => 'admin', 'prefix' => 'admin/instructor', 'middlewar
     Route::get('/create', 'SettingsController@create')->name('add.settings');
     Route::post('/store', 'SettingsController@store')->name('store.settings');
 });
+
+// CLASSES
+Route::group(['namespace' => 'admin', 'prefix' => 'admin/classes', 'middleware' => 'admin'], function(){
+    Route::get('/view', 'ClassesController@view')->name('view.classes');
+    Route::get('/edit', 'ClassesController@edit')->name('edit.classes');
+    Route::get('/create', 'ClassesController@create')->name('add.classes');
+    Route::get('/update', 'ClassesController@update')->name('update.classes');
+    Route::get('/delete', 'ClassesController@delete')->name('delete.classes');
+    Route::post('/store', 'ClassesController@store')->name('store.classes');
+});
+
+// DEPARTMENT
+Route::group(['namespace' => 'admin', 'prefix' => 'admin/departments', 'middleware' => 'admin'], function(){
+    Route::get('/view', 'DepartmentsController@view')->name('view.department');
+    Route::get('/edit/{id}', 'DepartmentsController@edit')->name('edit.department');
+    Route::get('/create', 'DepartmentsController@create')->name('add.department');
+    Route::post('/update/{id}', 'DepartmentsController@update')->name('update.department');
+    Route::get('/delete/{id}', 'DepartmentsController@delete')->name('delete.department');
+    Route::post('/store', 'DepartmentsController@store')->name('store.department');
+});
+
+// SUBJECTS
+Route::group(['namespace' => 'admin', 'prefix' => 'admin/subjects', 'middleware' => 'admin'], function(){
+    Route::get('/view', 'SubjectsController@view')->name('view.subject');
+    Route::get('/edit', 'SubjectsController@edit')->name('edit.subject');
+    Route::get('/create', 'SubjectsController@create')->name('add.subject');
+    Route::get('/update', 'SubjectsController@update')->name('update.subject');
+    Route::get('/delete', 'SubjectsController@delete')->name('delete.subject');
+    Route::post('/store', 'SubjectsController@store')->name('store.subject');
+});

@@ -34,7 +34,7 @@
          </div>
 
          <!-- Sidebar Menu -->
-         <nav class="mt-2">
+         <nav class="mt-3">
              <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                  data-accordion="false">
                  <!-- Add icons to the links using the .nav-icon class
@@ -47,37 +47,21 @@
                              <i class="right fas fa-angle-left"></i>
                          </p>
                      </a>
-                     <ul class="nav nav-treeview">
-                         <li class="nav-item">
-                             <a href="./index.html" class="nav-link active">
-                                 <i class="far fa-circle nav-icon"></i>
-                                 <p>Teachers Dashboard</p>
-                             </a>
-                         </li>
-                         <li class="nav-item">
-                             <a href="./index2.html" class="nav-link">
-                                 <i class="far fa-circle nav-icon"></i>
-                                 <p>Students Dashboard</p>
-                             </a>
-                         </li>
-                         {{-- <li class="nav-item">
-                <a href="./index3.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p></p>
-                </a>
-              </li> --}}
-                     </ul>
                  </li>
                  <li class="nav-item">
-                     <a href="pages/widgets.html" class="nav-link">
+                     <a href="" class="nav-link">
                          <i class="nav-icon fas fa-th"></i>
-                         <p>
-                             Widgets
-                         </p>
+                         <p>Categories</p>
                      </a>
                  </li>
                  <li class="nav-item">
-                     <a href="view_instructors" class="nav-link">
+                    <a href="" class="nav-link">
+                        <i class="nav-icon fas fa-list"></i>
+                        <p>Sub Categories</p>
+                    </a>
+                </li>
+                 <li class="nav-item">
+                     <a href="{{route('add_instructor')}}" class="nav-link">
                          <i class="nav-icon fas fa-users"></i>
                          <p>
                              Instructors
@@ -86,13 +70,13 @@
                      </a>
                      <ul class="nav nav-treeview">
                          <li class="nav-item">
-                             <a href="add_instructor" class="nav-link">
+                             <a href="{{ route('add_instructor') }}add" class="nav-link">
                                  <i class="far fa-circle nav-icon"></i>
                                  <p>Add</p>
                              </a>
                          </li>
                          <li class="nav-item">
-                             <a href="view_instructors" class="nav-link">
+                             <a href="{{route('view_instructors')}}" class="nav-link">
                                  <i class="far fa-circle nav-icon"></i>
                                  <p>View</p>
                              </a>
@@ -100,7 +84,7 @@
                      </ul>
                  </li>
                  <li class="nav-item">
-                     <a href="#" class="nav-link">
+                     <a href="" class="nav-link">
                          <i class="nav-icon fas fa-user-alt"></i>
                          <p>
                              Students
@@ -109,13 +93,13 @@
                      </a>
                      <ul class="nav nav-treeview">
                          <li class="nav-item">
-                             <a href="pages/charts/chartjs.html" class="nav-link">
+                             <a href="add_student" class="nav-link">
                                  <i class="far fa-circle nav-icon"></i>
                                  <p>Add</p>
                              </a>
                          </li>
                          <li class="nav-item">
-                             <a href="pages/charts/flot.html" class="nav-link">
+                             <a href="view_students" class="nav-link">
                                  <i class="far fa-circle nav-icon"></i>
                                  <p>View</p>
                              </a>
@@ -132,18 +116,60 @@
                      </a>
                      <ul class="nav nav-treeview">
                          <li class="nav-item">
-                             <a href="pages/UI/general.html" class="nav-link">
+                             <a href="{{route('add.department')}}" class="nav-link">
                                  <i class="far fa-info"></i>
-                                 <p>JSS Classes</p>
+                                 <p>add</p>
                              </a>
                          </li>
                          <li class="nav-item">
-                             <a href="pages/UI/general.html" class="nav-link">
+                             <a href="{{route('view.department')}}" class="nav-link">
                                  <i class="far fa-info"></i>
-                                 <p>SSS Classes</p>
+                                 <p>view</p>
                              </a>
                          </li>
                      </ul>
+                 </li>
+                 <li class="nav-item">
+                     <a href="" class="nav-link">
+                         <i class="nav-icon fas fa-list"></i>
+                         <p>Subjects</p>
+                         <i class="fas fa-angle-left right"></i>
+                     </a>
+                     <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="add_student" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Add</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="view_students" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>View</p>
+                            </a>
+                        </li>
+                    </ul>
+                 </li>
+                 <li class="nav-item">
+                     <a href="" class="nav-link">
+                         <i class="nav-icon fas fa-home"></i>
+                         <p>Classes</p>
+                         <i class="fas fa-angle-left right"></i>
+                     </a>
+                     <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{route('add.classes')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Add</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('view.classes')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>View</p>
+                            </a>
+                        </li>
+                    </ul>
                  </li>
                  <li class="nav-item">
                      <a href="" class="nav-link">

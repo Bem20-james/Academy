@@ -8,6 +8,10 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function index(){
-        return view('students.index');
+        $meta = array();
+        $meta['title'] = 'ADMIN | ACADEMIA';
+        $meta['content'] = 'index';
+
+        return view('admin.index')->with('meta', $meta);
     }
 }

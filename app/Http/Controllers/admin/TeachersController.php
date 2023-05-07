@@ -12,7 +12,11 @@ use Illuminate\Support\Str;
 class TeachersController extends Controller
 {
     public function create(){
-        return view('admin.pages.instructors.add_instructor');
+        $meta = array();
+        $meta['title'] = 'ADMIN | Add Teacher';
+        $meta['content'] = 'index';
+
+        return view('admin.pages.instructors.add_instructor')->with('meta', $meta);
     }
 
     public function store(Request $request) {
@@ -25,10 +29,8 @@ class TeachersController extends Controller
             'role' => 'required|integer|max:5',
             'department' => 'required|string|max:5',
         ]);
-        dd('instr');
 
         $password = Str::random(8);
-        // dd($password);
 
         DB::table('users')->insert([
             'firstname' => $request->first_name,
@@ -45,8 +47,7 @@ class TeachersController extends Controller
     }
 
     public function view(){
-        // $instructors = DB::table('users')->where('role', '=', 3)->get();
-        // return view('admin.pages.instructors.view_instructors')->with('instructors', $instructors);
-        return view('admin.pages.instructors.view_instructors');
+        $instructors = DB::table('users')->where('role', '=', 3)->get();
+        return view('admin.pages.instructors.view_instructors')->with('instructors', $instructors);
     }
 }

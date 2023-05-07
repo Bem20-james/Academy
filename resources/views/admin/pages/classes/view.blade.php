@@ -40,10 +40,6 @@
             </div>
         </div>
 
-        <div class="my-5 ml-3">
-            <a href="{{ route('create.country') }}" class="btn btn-success shadow-lg">Add Country</a>
-        </div>
-
         <!-- Main content -->
         <section class="content">
             <!-- /.box-body -->
@@ -65,37 +61,28 @@
                         <table class="table m-0">
                             <thead>
                                 <tr>
-                                    <th>#ID</th>
+                                    <th>#</th>
                                     <th>Name</th>
-                                    <th>Iso_Code1</th>
-                                    <th>Iso_Code2</th>
-                                    <th>Country code</th>
-                                    <th>Flag</th>
-                                    <th>Status</th>
-                                    <th>Action</th>
+                                    <th>Class Teacher</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @if ($countries->count() > 0)
                                     @foreach ($countries as $countries)
                                         <tr>
-                                            <td>{{ $countries->countries_id}}</td>
-                                            <td>{{ $countries->countries_name }}</td>
-                                            <td>{{ $countries->countries_iso_code_2 }}</td>
-                                            <td>{{ $countries->countries_iso_code_3 }}</td>
-                                            <td>{{ $countries->country_code }}</td>
-                                            <td>{{ $countries->flag }}</td>
-                                            <td>{{ $countries->status }}</td>
+                                            <td>{{ $countries->class_id}}</td>
+                                            <td>{{ $countries->class }}</td>
+                                            <td>{{ $countries->class_teacher }}</td>
                                             <td class="project-actions">
                                                 <a class="btn btn-primary btn-sm" href="">
                                                     <i class="fas fa-eye">
                                                     </i>
                                                 </a>
-                                                <a class="btn btn-success btn-sm" href="{{ route('edit.country', ['id' =>$countries->countries_id]) }}">
+                                                <a class="btn btn-success btn-sm" href="{{ route('edit.class', ['id' =>$class->class_id]) }}">
                                                     <i class="fas fa-pencil-alt">
                                                     </i>
                                                 </a>
-                                                <a class="btn btn-danger btn-sm" href="{{ route('delete.country', ['id' =>$countries->countries_id]) }}">
+                                                <a class="btn btn-danger btn-sm" href="{{ route('delete.class', ['id' =>$class->class_id]) }}">
                                                     <i class="fas fa-trash">
                                                     </i>
                                                 </a>
@@ -103,7 +90,7 @@
                                         </tr>
                                     @endforeach
                                     @else
-                                        <tr> <th colspan="10" class="text-center"> No currencies, please click add languages to add currencies </th> </tr>
+                                        <tr> <th colspan="10" class="text-center"> No classes, please click add class to classes </th> </tr>
                                 @endif
                             </tbody>
                         </table>

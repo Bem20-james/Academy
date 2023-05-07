@@ -1,7 +1,6 @@
 @extends('admin.layouts.Admin')
 @section('admin_contents')
     <!-- Content Header (Page header) -->
-    <div class="">
         <section class="content-header bg-dark pinned-2">
             <div class="">
                 <div class="container-fluid">
@@ -18,14 +17,12 @@
                 </div>
             </div>
         </section>
-
-        <!-- Main content -->
-        <section class="content">
             <div class="my-5 ml-3">
-
                 <a href="{{ route('add_student') }}" class="btn btn-success shadow-lg">Add Student</a>
             </div>
-
+        <!-- Main content -->
+        <section class="content">
+           
             <!-- Default box -->
             <div class="card">
                 <div class="card-header">

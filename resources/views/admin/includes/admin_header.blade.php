@@ -3,8 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Admin|Dashboard</title>
+    <?php
 
+        if(!empty($meta) ){
+            $meta_title = $meta['title'];
+            $meta_content = $meta['content'];
+        }else{
+            $meta_title = DB::table('settings')->get('name');
+            $meta_content = DB::table('settings')->get('about_us');
+        }
+
+    ?>
+
+  <title>{{ $meta['title'] }}</title>
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -25,13 +36,14 @@
   <link rel="stylesheet" href="{{ asset('admin/plugins/daterangepicker/daterangepicker.css')}}">
   <!-- summernote -->
   <link rel="stylesheet" href="{{ asset('admin/plugins/summernote/summernote-bs4.min.css')}}">
+  <link rel="stylesheet" href="{{ asset('admin/styles.admin.css')}}">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
 
       <!-- Preloader -->
       <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="{{asset('/public/assets/images/logo-academia.png')}}" alt="AdminLTELogo" height="60" width="60">
+        <img class="animation__shake" src="{{asset('assets/images/logo-academia.png')}}" alt="academia-logo" height="80" width="80">
       </div>
 
       <!-- Navbar -->
